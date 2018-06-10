@@ -1,0 +1,1086 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" class=" "><head>
+<!-- TYPO3 Script ID: main -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<link rel="shortcut icon" href="/typo3/sysext/backend/Resources/Public/Icons/favicon.ico" />
+<title>ressourcenmangeltypo3 [TYPO3 CMS 9.3.0-dev]</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="generator" content="TYPO3 CMS, https://typo3.org/, &amp;#169; Kasper Sk&amp;#229;rh&amp;#248;j 1998-2018, extensions are copyright of their respective owners." />
+<meta name="robots" content="noindex,follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+<link rel="stylesheet" type="text/css" href="/typo3temp/assets/compressed/backend-288a5e2ecf32dd965a570734f2b40aa6.css?1528497565" media="all" />
+
+
+<script type="text/javascript">
+/*&lt;![CDATA[*/
+var require = {"urlArgs":"bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d","paths":{"jquery-ui":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/jquery-ui","datatables":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/jquery.dataTables","nprogress":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/nprogress","moment":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/moment","cropper":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/cropper.min","imagesloaded":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/imagesloaded.pkgd.min","bootstrap":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/bootstrap\/bootstrap","twbs\/bootstrap-datetimepicker":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/bootstrap-datetimepicker","autosize":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/autosize","taboverride":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/taboverride.min","twbs\/bootstrap-slider":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/bootstrap-slider.min","jquery\/autocomplete":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/jquery.autocomplete","d3":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript\/Contrib\/d3\/d3","TYPO3\/CMS\/Core":"\/typo3\/sysext\/core\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Extbase":"\/typo3\/sysext\/extbase\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Fluid":"\/typo3\/sysext\/fluid\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Frontend":"\/typo3\/sysext\/frontend\/Resources\/Public\/JavaScript","TYPO3\/CMS\/FluidStyledContent":"\/typo3\/sysext\/fluid_styled_content\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Install":"\/typo3\/sysext\/install\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Setup":"\/typo3\/sysext\/setup\/Resources\/Public\/JavaScript","TYPO3\/CMS\/RteCkeditor":"\/typo3\/sysext\/rte_ckeditor\/Resources\/Public\/JavaScript","TYPO3\/CMS\/About":"\/typo3\/sysext\/about\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Adminpanel":"\/typo3\/sysext\/adminpanel\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Backend":"\/typo3\/sysext\/backend\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Belog":"\/typo3\/sysext\/belog\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Beuser":"\/typo3\/sysext\/beuser\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Documentation":"\/typo3\/sysext\/documentation\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Extensionmanager":"\/typo3\/sysext\/extensionmanager\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Felogin":"\/typo3\/sysext\/felogin\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Filelist":"\/typo3\/sysext\/filelist\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Form":"\/typo3\/sysext\/form\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Impexp":"\/typo3\/sysext\/impexp\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Info":"\/typo3\/sysext\/info\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Lowlevel":"\/typo3\/sysext\/lowlevel\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Recordlist":"\/typo3\/sysext\/recordlist\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Redirects":"\/typo3\/sysext\/redirects\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Reports":"\/typo3\/sysext\/reports\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Saltedpasswords":"\/typo3\/sysext\/saltedpasswords\/Resources\/Public\/JavaScript","TYPO3\/CMS\/SysNote":"\/typo3\/sysext\/sys_note\/Resources\/Public\/JavaScript","TYPO3\/CMS\/T3editor":"\/typo3\/sysext\/t3editor\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Tstemplate":"\/typo3\/sysext\/tstemplate\/Resources\/Public\/JavaScript","TYPO3\/CMS\/Viewpage":"\/typo3\/sysext\/viewpage\/Resources\/Public\/JavaScript","ckeditor":"\/typo3\/sysext\/rte_ckeditor\/Resources\/Public\/JavaScript\/Contrib\/ckeditor"},"waitSeconds":30,"shim":{"ckeditor":{"exports":"CKEDITOR"}},"packages":[{"name":"cm","location":"\/typo3\/sysext\/t3editor\/Resources\/Public\/JavaScript\/Contrib\/cm","main":"lib\/codemirror"}]}
+/*]]&gt;*/
+</script>
+<script src="/typo3temp/assets/compressed/require-85394dadc1242fe1a0d34684066b782a.js" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.min-0ea560390bec54bdf9ef1d6292de2e2e.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*&lt;![CDATA[*/
+var TYPO3 = TYPO3 || {};
+TYPO3.lang = {"bookmark.delete":"Delete bookmark","bookmark.confirmDelete":"Do you really want to remove this bookmark?","bookmark.create":"Create bookmark","bookmark.savedTitle":"Bookmark saved","bookmark.savedMessage":"The bookmark was saved.","labels.openInNewWindow":"Open in new window","labels.goBack":"Go back","labels.makeShortcut":"Create a shortcut to this page?","labels.makeBookmark":"Create a bookmark to this page","labels.lockedRecord":"The user '%s' began to edit this record %s ago.","labels.lockedRecord_content":"The user '%s' began to edit content on this page %s ago.","labels.lockedRecordUser":"The %s '%s' began to edit this record %s ago.","labels.lockedRecordUser_content":"The %s '%s' began to edit content on this page %s ago.","labels.user":"User","labels.beUser":"BE-User","labels.feUser":"FE-User","labels.unknownUser":"-Unknown-","labels.showRecords":"Show records","labels.path":"Path","labels.resetFilter":"Reset Filter","labels.table":"Table","labels.upOneLevel":"Up one level","labels.expandTable":"Expand table","labels.collapseTable":"Collapse table","labels.enterSearchString":"Enter search term","labels.enterSearchLevels":"This page|1 level down|2 levels down|3 levels down|4 levels down","labels.searchLevel.0":"This page","labels.searchLevel.1":"1 level down","labels.searchLevel.2":"2 levels down","labels.searchLevel.3":"3 levels down","labels.searchLevel.4":"4 levels down","labels.searchLevel.infinite":"Infinite levels","labels.noEditPermission":"Sorry, you didn't have proper permissions to perform this change.","labels.fieldsMissing":"The fields marked with an exclamation mark are not yet correctly filled in. Please complete them properly.","labels.fieldsChanged":"There are unsaved changes in the form!\nDo you want to continue WITHOUT saving?","labels.remainingCharacters":"Remaining characters: {0}","labels.maxItemsAllowed":"A maximum of {0} child records are allowed.","labels.noRTEfound":"Notice: This field can only be edited with a Rich Text Editor. No editor is currently available or enabled.","labels.recordInformation":"Record information","labels.disableRTE":"Disable Rich Text Editor (RTE)","labels._CONTROL_":"Control","labels._PATH_":"Path","labels._LOCALIZATION_":"Localization","labels.setFields":"Set fields","labels.search":"Search","labels.author":"Author","labels.note":"Note","labels.category":"Category","labels.reload":"Reload","labels.csv":"Download CSV file","labels.clear_cache":"Clear cache for this page","labels.no_title":"No title","labels.cancel":"Cancel","labels.hidden":"Hidden","labels.starttime":"Start","labels.endtime":"End","labels.minutesHoursDaysYears":"min|hrs|days|yrs|min|hour|day|year","labels.menu":"Menu","labels.showPage":"View webpage","labels.showList":"Show record list","labels.days":"days","labels.depth_0":"This page","labels.depth_1":"1 level","labels.depth_2":"2 levels","labels.depth_3":"3 levels","labels.depth_4":"4 levels","labels.depth_infi":"Infinite","labels.allow":"Allow","labels.deny":"Deny","labels.automatic":"Auto","labels.enabled":"Enabled","labels.show":"Show","labels.generalTab":"General","labels.refresh":"Reload the tree from server","labels.temporaryDBmount":"Cancel temporary DB mount","labels.refreshList":"Reload list from server","labels.close":"Close","labels.tableWizard":"Table Wizard","labels.new":"NEW","labels.list":"List","labels.link":"Link","labels.edit":"Edit","labels.createNew":"Create new","labels.createNewPage":"Create new %s","labels.createNewRecord":"Create new %s on page \"%s\"","labels.createNewRecordRootLevel":"Create new %s on root level","labels.editPage":"Edit %s \"%s\"","labels.editRecord":"Edit %s \"%s\" on page \"%s\"","labels.editRecordNoTitle":"Edit %s on page \"%s\"","labels.editRecordRootLevel":"Edit %s \"%s\" on root level","labels.rootLevel":"root level","labels.addnew":"Add new","labels.toggleall":"Toggle all","labels.selected":"Selected Items","labels.items":"Available Items","labels.remove_selected":"Remove selected items","labels.move_to_top":"Move selected items to top","labels.move_up":"Move selected items upwards","labels.move_down":"Move selected items downwards","labels.move_to_bottom":"Move selected items to bottom","labels.move":"Move this item","labels.browse_file":"Browse for files","labels.browse_db":"Browse for records","labels.clipInsert_file":"Insert %s file(s) from the clipboard","labels.clipInsert_db":"Insert %s record(s) from the clipboard","labels.generalOptions":"General options","labels.generalOptions_more":"General options (continued)","labels.allTables":"[All tables]","labels.noMatchingValue":"INVALID VALUE (\"%s\")","labels.thumbmode_clip":"Show Thumbnails on ClipBoard","labels.copymode":"Copy items instead of moving them","labels.normal":"Normal (single record mode)","labels.normal-description":"\"Normal\" clipboard allows to copy\/move one record at time.","labels.cliptabs":"Clipboard #","labels.cliptabs-name":"Clipboard #%s (multi-selection mode)","labels.cliptabs-description":"This clipboard allows to select and edit\/copy\/move multiple records at once. Choose it to show a checkbox by each record.","labels.clipboard.delete_elements":"Delete elements","labels.clipboard.clear_clipboard":"Clear clipboard","labels.removeItem":"Remove item","labels.holdDownCTRL":"Important: Hold down the CTRL key while toggling elements in this list!","labels.revertSelection":"Revert selection","labels.setAllCheckboxes":"Select All Checkboxes","labels.checkAll":"Check all","labels.uncheckAll":"Uncheck all","labels.placeholder.override":"Set element specific value (Default: \"%s\")","labels.placeholder.override_not_available":"Set element specific value (No default)","labels.nullCheckbox":"Set value","labels.changeInOrig":"Changed in original translation","labels.expandAll":"Expand all","labels.new_section":"Create new","labels.count":"Quantity","labels.findRecord":"Find records","labels.noRecordFound":"No record found","labels.title.searchIcon":"Toggle search toolbar","labels.title.searchString":"Search term","labels.title.limit":"Limit","labels.title.search":"Search","labels.title.search_levels":"Search levels","labels.label.searchString":"Search term","labels.label.limit":"Limit","labels.label.search_levels":"Search levels","alttext.suggestSearching":"Searching...","ver.online":"ONLINE","ver.mgm":"Version Management","ver.selVer":"Select version","ver.swap":"Swap\/Publish","ver.swapPage":"Publish this version of the page including content","TYPO3_Element_Browser":"TYPO3 Element Browser","labels.referencesToRecord":"(There are %s reference(s) to this record!)","labels.referencesToFolder":"(There are %s reference(s) to this folder!)","labels.referencesToFile":"(There are %s reference(s) to this file!)","labels.translationsOfRecord":"(This record has %s translation(s) which will be deleted, too!)","show_item.php.viewItem":"View Item","show_item.php.referencesToThisItem":"References to this item","show_item.php.referencesFromThisItem":"References from this item","show_item.php.file":"File","show_item.php.dimensions":"Dimensions","show_item.php.filesize":"Size","show_item.php.pixels":"Pixels","show_item.php.files":"files","show_item.php.cannotDisplayArchive":"Sorry, TYPO3_CONF_VARS[BE][disable_exec_function] was set, so cannot display content of archive file.","show_item.php.table":"Table","show_item.php.uid":"Uid","show_item.php.title":"Title","show_item.php.field":"Field","show_item.php.flexpointer":"Flexpointer","show_item.php.softrefKey":"Softref Key","show_item.php.sorting":"Sorting","show_item.php.refTable":"Ref Table","show_item.php.refUid":"Ref Uid","show_item.php.refString":"Ref String","show_item.php.ftp_area":"FTP AREA","show_item.php.missing_record":"Missing","db_new.php.pagetitle":"New record","db_new.php.after":"after","db_new.php.inside":"inside","file_upload.php.pagetitle":"Upload files","file_upload.php.submit":"Upload files","file_upload.php.files":"files","file_upload.dropzonehint.title":"Drag &amp; drop to upload files","file_upload.dropzonehint.message":"Drop your files here, or &lt;u&gt;click, browse &amp; choose files&lt;\/u&gt;","file_upload.select-and-submit":"Select &amp; upload files","file_upload.maxFileSizeExceeded":"File \"{0}\" exceeds maximum file size of {1}!","file_upload.fileNotAllowed":"Filename \"{0}\" is not allowed!","file_upload.fileExtensionExpected":"Upload failed! A file with \"{0}\" extension is expected!","file_upload.uploadFailed":"Upload of file \"{0}\" failed!","file_upload.upload-in-progress":"File upload in progress...","file_upload.upload-progress-info":"Uploading file {0} out of {1} files.","file_upload.upload-finished":"Upload complete! Filelist reloading...","file_upload.overwriteExistingFiles":"Shall existing files be overwritten?","file_upload.header.originalFile":"Original file","file_upload.header.uploadedFile":"Uploaded file","file_upload.header.action":"Action","file_upload.existingfiles.title":"Some files exist already","file_upload.existingfiles.description":"Some files you wanted to upload exist already on the system. Please select what you want to do with each file.","file_upload.actions.skip":"Skip the file","file_upload.actions.rename":"Rename","file_upload.actions.override":"Overwrite","file_upload.actions.use_existing":"Use existing file","file_upload.actions.all.label":"Alternatively, choose a mass action","file_upload.actions.all.empty":"Please choose","file_upload.actions.all.skip":"Skip all files","file_upload.actions.all.rename":"Rename all files","file_upload.actions.all.override":"Overwrite all files","file_upload.actions.all.use_existing":"Use existing files","file_upload.button.cancel":"Cancel","file_upload.button.continue":"Continue with selected actions","file_upload.php.number_of_files":"Number of files","file_rename.exists.title":"File exists already","file_rename.exists.description":"You want to rename the file \"{0}\" to \"{1}\", but such a file already exists. How do you want to proceed?","file_rename.actions.cancel":"Cancel","file_rename.actions.rename":"Rename with unique name","file_rename.actions.override":"Overwrite","file_rename.php.pagetitle":"Rename","file_rename.php.submit":"Rename","file_rename.php.label.target.file":"New file name","file_rename.php.label.target.folder":"New folder name","file_replace.php.pagetitle":"Replace","file_replace.php.selectfile":"Select new file","file_replace.php.keepfiletitle":"Keep the current filename?","file_replace.php.browse":"Browse","file_replace.php.submit":"Replace","file_edit.php.pagetitle":"Edit","file_edit.php.submit":"Save","file_edit.php.saveAndClose":"Save and Close","file_edit.php.coundNot":"This filetype cannot be edited.&lt;br \/&gt;The file must have an extension like:&lt;br \/&gt;&lt;br \/&gt; &lt;b&gt;%s&lt;\/b&gt;","file_newfolder.php.pagetitle":"New file or folder","file_newfolder.php.newfolders":"Create new folders","file_newfolder.php.label_newfolder":"Folder","file_newfolder.php.submit":"Create folders","create_folder.title":"Create new folder","create_folder.submit":"Create folder","file_newfolder.php.folders":"folders","file_newfolder.php.newfile_submit":"Create file","file_newfolder.php.newfile":"Create new textfile","file_newfolder.php.label_newfile":"File name","file_newfolder.php.number_of_folders":"Number of folders","online_media.new_media":"Add new media asset","online_media.new_media.label":"Url of remote source","online_media.new_media.allowedProviders":"Allowed media providers","online_media.new_media.button":"Add media by URL","online_media.new_media.submit":"Add media","online_media.new_media.added":"Added media","online_media.new_media.placeholder":"Paste media url here...","online_media.error.new_media.failed":"Adding media failed","online_media.error.invalid_url":"Unknown\/not allowed URL","file_clipupload.php.warning_head":"Upload path error","file_clipupload.php.warning":"No upload-folder is found. You should create a TEMP-folder (\"_temp_\") in the root of one of your mounts first!","mess.redraw":"Redrawing the page will discard the current data. Do you want to continue?","mess.delete":"Are you sure you want to delete '%s'?","mess.deleteClip":"Are you sure you want to delete ALL referenced elements (%s) on the clipboard?","mess.refresh_login":"Your login has probably expired.\nDo you want to refresh it now?","mess.refresh_login_refresh_button":"Stay logged in!","mess.refresh_direct_logout_button":"No, log out.","mess.refresh_login_logging_in":"Logging in...","mess.refresh_login_failed":"Login failed","mess.refresh_login_failed_message":"Password not correct.","mess.refresh_login_title":"Refresh Login to TYPO3 (User: %s)","mess.refresh_login_username":"Username","mess.refresh_login_password":"Password","mess.refresh_login_button":"Login","mess.refresh_exit_button":"Exit","mess.refresh_login_emptyPassword":"Empty password is not allowed!","mess.please_wait":"Please wait ...","mess.be_locked":"The TYPO3 backend is currently locked for maintenance. Leave this browser window open and the backend will automatically become available again once maintenance is complete.","mess.login_about_to_expire":"Your TYPO3 login is about to expire. Please confirm that you want to stay logged in.","mess.refresh_login_logout_button":"Log me out","mess.login_refresh_about_to_expire":"Your TYPO3 login is about to expire. Please confirm that you want to be logged out.","mess.login_about_to_expire_title":"TYPO3 login expiration notice","mess.login_expired":"Your TYPO3 login has expired. You need to login again if you want to continue. Otherwise you can close the current browser window.","mess.noSelItemForEdit":"Please select one or more items in the list before you can edit.","mess.refreshRequired.title":"Refresh required","mess.refreshRequired.content":"This change will affect which fields are available in the form. Would you like to save now in order to refresh the display?","mess.move_into":"Move \"%s\" into \"%s\"?","mess.move_into_colPos":"Move \"%1$s\" into column \"%3$s\" on page \"%2$s\"?","mess.move_after":"Move \"%s\" to after \"%s\"?","mess.copy_into":"Copy \"%s\" into \"%s\"?","mess.copy_into_colPos":"Copy \"%1$s\" into column \"%3$s\" on page \"%2$s\"?","mess.copy_after":"Copy \"%s\" to after \"%s\"?","mess.copycb_into":"Copy all elements (%s) from the clipboard into \"%s\"?","mess.copycb_after":"Copy all elements (%s) from the clipboard to the position after \"%s\"?","mess.movecb_into":"Move all elements (%s) from the clipboard into \"%s\"?","mess.movecb_after":"Move all elements (%s) from the clipboard to the position after \"%s\"?","rm.menu":"[menu]","rm.saveDoc":"Save","rm.saveDocShow":"Save and view page","rm.saveCloseDoc":"Save and close","rm.saveCloseAllDocs":"Save and close all","rm.saveNewDoc":"Save and create a new one","rm.duplicateDoc":"Duplicate","labels.recordDuplicated":"The record has been duplicated.","rm.closeDoc":"Close","rm.closeAllDocs":"Close all","rm.clearCache_clearCache":"Clear cache","rm.clearCache_thisPage":"This page","rm.clearCache_all":"Clear FE cache","rm.clearCache_pages":"Clear Page Cache","rm.clearCache_allTypo3Conf":"Clear cache in typo3conf\/","rm.clearCacheMenu_all":"Clear all caches","rm.clearCacheMenu_pages":"Clear page content cache","rm.clearCacheMenu_allTypo3Conf":"Clear configuration cache","flushPageCachesTitle":"Flush frontend caches","flushPageCachesDescription":"Clear frontend and page-related caches.","flushAllCachesTitle2":"Flush all caches","flushAllCachesDescription2":"Clear all system-related caches, including localization, extension configuration, file caches and opcode caches. Rebuilding this cache may take some time.","rm.adminFunctions":"Admin functions","rm.edit":"Edit","rm.export":"Export","rm.delete":"Delete","message.header.fileNotDeletedHasReferences":"File not deleted","message.description.fileNotDeletedHasReferences":"The file cannot be deleted since it is still used at the following places","message.header.folderNotDeletedHasFilesWithReferences":"Folder not deleted","message.description.folderNotDeletedHasFilesWithReferences":"The folder cannot be deleted since it still contains files in use.","message.header.fileHasBrokenReferences":"File has broken references","message.description.fileHasBrokenReferences":"The file has %s broken reference(s) but it will be deleted regardless.","message.header.fileNotFound":"File not found","message.description.fileNotFound":"The file %s is not found, possible already removed.","message.header.fileDeleted":"File deleted","message.description.fileDeleted":"The file \"%s\" was successfully deleted.","message.header.folderDeleted":"Folder deleted","message.description.folderDeleted":"The folder \"%s\" was successfully deleted.","message.header.folderNotDeletedHasFiles":"Folder not deleted","message.description.folderNotDeletedHasFiles":"The folder cannot be deleted since it still contains files.","buttons.logout":"Logout","buttons.exit":"Exit","buttons.selMenu_modules":"MODULES","buttons.clear":"Clear","buttons.clipboard":"Clipboard","buttons.toggleLinkExplanation":"Toggle link explanation","cm.copy":"Copy","cm.cut":"Cut","cm.cutrelease":"Cut release","cm.view":"Show","cm.edit":"Edit","cm.editcontent":"Edit content","cm.editMetadata":"Edit Metadata of this file","cm.new":"New","cm.pasteinto":"Paste into","cm.pasteafter":"Paste after","cm.select":"Select","cm.deselect":"Deselect","cm.selectto":"Select to","cm.deselectto":"Deselect to","cm.delete":"Delete","cm.hide":"Hide","cm.unhide":"Unhide","cm.online":"Turn online","cm.offline":"Turn offline","cm.upload":"Upload Files","cm.rename":"Rename","cm.replace":"Replace","cm.open":"Open","cm.save":"Save","cm.unzip":"Unzip","cm.info":"Info","cm.createnew":"Create new","cm.createnew.link":"Create new %s","cm.tempMountPoint":"Mount as treeroot","cm.copyPage_into":"Copy page into","cm.copyPage_after":"Copy page after","cm.movePage_into":"Move page into","cm.movePage_after":"Move page after","cm.copyFolder_into":"Copy folder into","cm.moveFolder_into":"Move folder into","cm.createNewRelation":"Create new relation","cm.branchActions":"Branch Actions","cm.copyPasteActions":"Page Actions","cm.collapseBranch":"Collapse Branch","cm.expandBranch":"Expand Branch","cm.more":"More options...","cm.allowedFileExtensions":"Allowed file extensions","cm.allowEmbedSources":"Allowed media sources","sortable.dragmove":"Drag to move","tree.defaultPageTitle":"[Default Title]","tree.activeFilterMode":"Active Filtering Mode","tree.buttonNewNode":"Create new pages","tree.buttonFilter":"Filter tree","tree.searchTermInfo":"Enter search term","warning.install_password":"The Install Tool is still using the default password \"joh316\". Update this within the %sAbout section%s of the Install Tool.","warning.installtool_default_password":"The Install Tool is still using the default password \"joh316\". Update this within the %sImportant actions section%s of the Install Tool.","warning.backend_admin":"The default backend user \"admin\" with password \"password\" is still present. %sEdit this account%s, either deleting it completely or changing the username and password.","warning.file_deny_pattern":"The value of fileDenyPattern is not set to its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.","warning.file_deny_pattern_partsNotPresent":"Security Risk! The new value of fileDenyPattern misses parts of its default:%s If TYPO3 is running on Apache, a customized value might enable backend or frontend users to execute malicious php scripts.","warning.file_deny_htaccess":"The current value of fileDenyPattern allows to upload\/create files with the name \".htaccess\". If TYPO3 is running on Apache, this enables backend or frontend users to create and execute php scripts. Please reset the value of fileDenyPattern to its default.","warning.install_enabled":"The Install Tool is permanently enabled. Delete the file \"%s\" when you have finished setting up TYPO3.","warning.install_enabled_cmd":"Click to remove the file now!","warning.install_trustedhosts":"The trusted hosts pattern check is disabled. Please define the allowed hosts in the [SYS][trustedHostsPattern] section of the Install Tool.","warning.install_update":"This installation is not configured for the TYPO3 version it is running. If you did so intentionally, this message can be safely ignored. If you are unsure, visit the Update Wizard section of the %sInstall Tool%s to see how TYPO3 would change.","warning.header":"Important Notice!","warning.backend_reference":"The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. Please go to %sTools&gt;DB Check%s and update the reference index.","warning.backend_reference_index":"The Reference Index table is empty which is likely the result of a recent TYPO3 upgrade. The Reference Index was last updated on %3$s. Please go to %sTools&gt;DB Check%s and update the reference index.","warning.memcache_not_usable":"Memcache is configured, but connection to memcached failed with these configuration(s)","warning.file_missing":"File is missing!","warning.file_missing_text":"This file is marked as missing","warning.header.storage_is_no_public":"Storage is not public","warning.message.storage_is_no_public":"The storage has been marked to be \"publicly available\" but is not detected as such by the driver. The setting has been reverted.","warning.inline_use_combination":"This record will be modified globally.","error.formProtection.tokenInvalid":"Validating the security token of this form has failed. Please reload the form and submit it again.","toolbarItems.shortcuts":"Shortcuts","toolbarItems.shortcut":"Shortcut","toolbarItems.shortcutsGroup":"Shortcut Group","toolbarItems.shortcutsEdit":"Edit Shortcut","toolbarItems.shortcutsDelete":"Delete Shortcut","toolbarItems.bookmarks":"Bookmarks","toolbarItems.bookmark":"Bookmark","toolbarItems.bookmarksGroup":"Bookmark group","toolbarItems.bookmarksEdit":"Edit bookmark","toolbarItems.bookmarksDelete":"Delete bookmark","toolbarItems.confirmBookmarksDelete":"Do you really want to remove this bookmark?","toolbarItems.createBookmark":"Create bookmark","toolbarItems.bookmarkSavedTitle":"Bookmark saved","toolbarItems.bookmarkSavedMessage":"The bookmark was saved.","toolbarItems.help":"Help","toolbarItems.search":"Search","toolbarItems.workspace":"Workspace","toolbarItems.sysinfo":"System Information","toolbarItems.sysinfo.phpversion":"PHP Version","toolbarItems.sysinfo.database":"Database","toolbarItems.sysinfo.applicationcontext":"Application Context","toolbarItems.sysinfo.composerMode":"Composer mode","toolbarItems.sysinfo.gitrevision":"GIT Revision","toolbarItems.sysinfo.operatingsystem":"Operating System","toolbarItems.sysinfo.webserver":"Webserver","toolbarItems.sysinfo.typo3-version":"TYPO3 Version","extension.not.installed":"Extension \"%s\" is not installed.","link.to.filefile.correctly":"Please, do not link to this page.","csh_tooltip_loading":"Loading help...","error.database_schema_mismatch":"A SQL error occurred. This may indicate a schema mismatch between TCA and the database. Try running database compare in the Install Tool.","error.database_schema_mismatch_title":"Database Error","error.items_proc_func_error":"An error occurred trying to process items for field \"%1$s\" (%2$s).","error.invalidEmail":"\"%s\" is not a valid e-mail address.","error.backendUserGroupListTypeError.header":"Possible misconfiguration detected","error.backendUserGroupListTypeError.message":"Editing of at least one plugin was enabled but editing the page content type \"Insert Plugin\" is still disallowed. Group members won't be able to edit plugins unless you activate editing for the content type.","error.missingLanguageIsocode":"Missing ISO code for language \"%s\" (UID %d), please edit the language record and set it.","labels.deleteTitle":"Revert to default Constant","labels.editTitle":"Edit this Constant","pageTranslation":"Page Translation","filestorage.invalidpathexception.title":"Error in Path","filestorage.invalidpathexception.message":"You entered an invalid path for this File Storage. Note that \"..\/\" and \"\/\/\" are not allowed when using an absolute path.","shortcutDescription":"This is the shortcuts menu. You do not have any shortcuts added yet, you can do so by clicking the shortcut icon %icon%, which you can find on each page in the backend.","shortcut_edit":"Edit","shortcut_create":"Create","shortcut_editID":"Edit\/Search","shortcut_save":"Update shortcut title","shortcut_saveClose":"Update and close editor","shortcut_close":"Close shortcut editor","shortcut_delete":"Remove shortcut","shortcut_loadEdit":"Loading page","shortcut_searchFor":"Search for","shortcut_notEditable":"No editable page found!","shortcut_group":"Group","shortcut_group_1":"Pages","shortcut_group_2":"Records","shortcut_group_3":"Files","shortcut_group_4":"Tools","shortcut_group_5":"Miscellaneous","shortcut_global":"Global","shortcut_all":"All","shortcut_onlyAdmin":"You cannot edit a shared shortcut!","shortcut_selSC":"Select shortcut","shortcut_delAllInCat":"Delete all shortcuts in this group?","shortcut_onlineWS":"LIVE workspace","shortcut_active":"active","shortcut_inactive":"inactive","shortcut_noWSfound":"ERROR: No workspaces found!","shortcut_FEPreview":"Enable Frontend Preview","shortcut_workspace":"Go to Workspace Module","bookmark_description":"This is the bookmarks menu. You do not have any bookmarks added yet, you can do so by clicking the bookmark icon %s, which you can find on each page in the backend.","bookmark_edit":"Edit","bookmark_create":"Create","bookmark_editID":"Edit\/Search","bookmark_save":"Update bookmark title","bookmark_saveClose":"Update and close editor","bookmark_close":"Close bookmark editor","bookmark_delete":"Remove bookmark","bookmark_loadEdit":"Loading page","bookmark_searchFor":"Search for","bookmark_notEditable":"No editable page found!","bookmark_group":"Group","bookmark_group_1":"Pages","bookmark_group_2":"Records","bookmark_group_3":"Files","bookmark_group_4":"Tools","bookmark_group_5":"Miscellaneous","bookmark_global":"Global","bookmark_all":"All","bookmark_onlyAdmin":"You cannot edit a shared bookmark!","bookmark_selSC":"Select bookmark","bookmark_delAllInCat":"Delete all bookmarks in this group","bookmark_onlineWS":"LIVE workspace","bookmark_active":"active","bookmark_inactive":"inactive","bookmark_noWSfound":"ERROR: No workspaces found!","bookmark_FEPreview":"Enable Frontend Preview","bookmark_workspaceComparisonView":"Enable comparison view","bookmark_workspace":"Go to Workspace Module","overwriteExistingFiles":"Overwrite existing files","uploadMultipleFilesInfo":"Upload multiple files by holding the Shift or CTRL-file pressed while selecting your files (works on modern browsers only).","fileMetaDataLocation":"Location","fileMetaErrorInvalidRecord":"File meta data not found","selectPosition":"Select a position for the new page","pageSelectPosition":"Page (select position)","goBack":"Go back","createNewPage":"Create a new page","createNewContent":"Create a new content element","clickForWizard":"Click here for wizard!","insertNewPageHere":"Insert the new page here","insertNewRecordHere":"Insert new record here","movePageToHere":"Move page to this position","moveElement":"Move element","moveElements":"Move elements","copyElements":"Copy elements","selectPositionOfElement":"Select position of the element","movingElement":"Move element","makeCopy":"Make copy instead of moving element","newContentElement":"Create new content element","system_records":"System Records","1_selectType":"First select the type of the new content element","2_selectPosition":"Now click on the position of the new content element","CM_history":"History\/Undo","CM_perms":"Access","CM_moveWizard":"Move element","CM_moveWizard_page":"Move page","CM_newWizard":"'Create New' wizard","CM_editPageProperties":"Edit page properties","CM_db_list":"Web&gt;List module","noEditPage":"Sorry, you do not have permissions to edit this page!","localize":"Localize","localize.isLocalizable":"Record can be localized","localize.wasRemovedInOriginal":"Record was removed in original language","localizeAllRecords":"Localize all records","synchronizeWithOriginalLanguage":"Synchronize with original language","pageTree_filter":"Filter","switchtouser":"Switch to User","switchtousershort":"SU","fileUpload_windowTitle":"File Upload Progress","fileUpload_buttonSelectFiles":"Select Files","fileUpload_buttonCancelAll":"Cancel All Uploads","fileUpload_infoComponentMaxFileSize":"You can upload files with a maximum size of {0}.","fileUpload_infoComponentFileUploadLimit":"You can upload a total of {0}.","fileUpload_infoComponentFileTypeLimit":"You can upload the following file types {0}.","fileUpload_infoComponentOverrideFiles":"Overwrite existing files","fileUpload_processRunning":"Another process is already uploading","fileUpload_uploadWait":"Waiting to start upload of {0}","fileUpload_uploadStarting":"Starting upload of {0}","fileUpload_uploadProgress":"{0}% of {1} uploaded","fileUpload_uploadSuccess":"{0} was successfully uploaded!","pagetree_networkErrorTitle":"Page tree error","pagetree_networkErrorDesc":"Got unexpected response from the server. Please check logs for details.","fileUpload_errorQueueLimitExceeded":"Too many files selected","fileUpload_errorQueueFileSizeLimit":"{0} is too big","fileUpload_errorQueueZeroByteFile":"{0} is empty","fileUpload_errorQueueInvalidFiletype":"Filetype not allowed for {0}","fileUpload_errorUploadHttp":"Too many files selected","fileUpload_errorUploadHttpError":"A HTTP error occurred: {0}","fileUpload_errorUploadMissingUrl":"Internal error: No Upload URL set","fileUpload_errorUploadIO":"Internal error: Problems while reading\/writing the file","fileUpload_errorUploadSecurityError":"Internal error: {0}","fileUpload_errorUploadLimit":"Upload limit exceeded","fileUpload_errorUploadFailed":"Upload failed","fileUpload_errorUploadFileIDNotFound":"Internal error: File ID not found","fileUpload_errorUploadFileValidation":"Internal error while validating the file","fileUpload_errorUploadFileCancelled":"Upload of {0} canceled","fileUpload_errorUploadStopped":"Upload of {0} stopped","fileUpload_allErrorMessageTitle":"All uploads failed","fileUpload_allErrorMessageText":"All of your uploads failed.&lt;br \/&gt;&lt;br \/&gt;If this problem persists, please try another browser, contact your administrator or disable this \"Flash Uploader\" in your User Settings.&lt;br \/&gt;&lt;br \/&gt;Detailed problem description:&lt;br \/&gt;","fileUpload_allError401":"The server returned the status code 401, which is related to a .htaccess file used for password protection on your server. Unfortunately this can not be handled by your browser's Flash plugin.","fileUpload_allError2038":"An input\/output error occurred (Error #2038). This i.e. happens with servers using a self-signed SSL certificate, which is a limitation of your browser's Flash plugin.","liveSearch_title":"Short result list","liveSearch_emptyText":"Enter search term","liveSearch_loadingText":"Searching...","liveSearch_listEmptyText":"No results found.","liveSearch_showAllResults":"Show All","liveSearch_helpTitle":"How to use advanced search tags","liveSearch_helpDescription":"Search in certain tables","liveSearch_helpDescriptionPages":"#page:Home will search for all pages with the title \"Home\"","viewPort_tooltipModuleMenuSplit":"Drag to resize the Modules Menu","viewPort_tooltipNavigationContainerSplitDrag":"Drag to resize or double click to collapse the page tree area","viewPort_tooltipNavigationContainerSplitClick":"Click to toggle the page tree area","viewPort_tooltipDebugPanelSplitDrag":"Drag to resize or click to collapse the Debug Panel.","title":"Page content","advancedFunctions":"Advanced functions","noEditItems":"Sorry, you do not have permissions to edit items on this page!","nextThree":"Edit next %s records","moveUp":"Move record up","moveDown":"Move record down","unHide":"Un-hide","hide":"Hide","edit":"Edit","newAfter":"New record after this one","move_record":"Re-position current content element","move_page":"Move page","deleteItem":"Delete","deleteWarning":"Are you sure you want to delete this record?","recursiveDeleteWarning":"You can recover pages with subpages only with the recycler. Are you sure you want to delete these pages?","pasteIntoColumn":"Paste into this column","pasteAfterRecord":"Paste after this record","paste.modal.title.paste":"Paste record","paste.modal.pastecopy":"Do you want to copy the record to this position?","paste.modal.paste":"Do you want to move the record to this position?","paste.modal.button.cancel":"Cancel","paste.modal.button.pastecopy":"Copy","paste.modal.button.paste":"Move","editColumn":"Edit this column","editPageProperties_curLang":"Edit translation properties","editInRTE":"Edit in Rich Text Editor","newPageContent":"Create page content","newPageContent_translate":"Translate","newPageContent2":"New content","content":"Content","newInColumn":"Create new record in top of this column","records":"records","pageInformation":"Page information","goToTable":"Go to table","internalNotes":"Internal notes","clearCache":"Click here to clear cache for this page.","hiddenCE":"Show hidden content elements","new_language":"Make new translation of this page","newLabel":"NEW","defaultLanguage":"Default","editLanguageHeader":"Edit language header","editPageProperties":"Edit page properties","editPageLanguageOverlayProperties":"Edit page language overlay properties","newRecordGeneral":"Create new record","CEonThisPage":"Content elements on this page","newPage":"Create new page","newPage2":"New page","noAccess":"No edit access","noAccess_msg":"You do not have access to edit the requested record.","notAssigned":"Not assigned","undoLastChange":"Undo\/Redo last change (%s ago)","recordHistory":"View record change history","viewContent":"Viewing content of","tt_board_subject":"Subject","tt_board_author":"Author","tt_board_date":"Date","tt_board_age":"Age","tt_board_RE":"RE","m_function_0":"QuickEdit","m_function_1":"Columns","m_function_2":"Languages","gridView":"Grid-View","m_tt_board_0":"List topics only","m_tt_board_expand":"Expand Threads","m_tt_address_0":"Short List","m_tt_address_1":"Address list","m_tt_address_2":"Personal info","m_tt_links_1":"Whole URL","m_tt_links_2":"Alternative note","m_tt_calender_date":"Date","m_tt_calender_date_ext":"Date - extended","m_tt_calender_todo":"Todo","m_tt_calender_todo_ext":"Todo - extended","m_tt_calender_ext":"Extended","m_tt_products_ext":"Extended","m_default":"Default","clickAPage_header":"Web&gt;Page module","clickAPage_content":"Please click the page title in the page tree to the left to edit page content.","pI_crUser":"Created by","pI_crDate":"Created date","pI_lastChange":"Last change","pI_lastChangeContent":"Last change, content","pI_hitsTotal":"Total Hits","pI_hitsPeriod":"Hits Period","pI_hits24hours":"Last 24 hours","pI_hits10days":"Last 10 days","content_from_pid_title":"Page uses content from this page: %s","content_on_pid_title":"This content is also shown on: %s","pageIsExternalLinkMessage":"Page is a link to the following external URL: %s","pageIsInternalLinkMessage":"Page is a link to the following page: %s","pageIsRandomInternalLinkMessage":"Page is a link to a random page.","pageIsMisconfiguredInternalLinkMessage":"Page is configured to be a link but there is actually no target defined.","pageIsMisconfiguredExternalLinkMessage":"Page is configured to be an external link but there is actually no URL defined.","goToListModule":"Go to list module","goToListModuleMessage":"The current page is a folder. Folders usually don't contain content elements but are used for collecting other types of records.","noPluginSelected":"No plugin selected","staleTranslationWarning":"Make sure that this behavior is intended and does not pose a problem for you. We highlighted the problematic records for you.","staleTranslationWarningTitle":"Inconsistent content detected in language \"%s\"","languageModeFree":"Free Mode","languageModeConnected":"Connected Mode","languageModeMixed":"Mixed Mode","staleUnusedElementsWarning":"These elements don't belong to any of the available columns of this page. You should either delete them or move them to existing columns. We highlighted the problematic records for you.","staleUnusedElementsWarningTitle":"Unused elements detected on this page","localize.chooseLanguage":"Choose your language","localize.wizard.header":"Localize record \"{0}\" into {1}","localize.wizard.header_page":"Localize page \"{0}\" into {1}","localize.wizard.button.cancel":"Cancel","localize.wizard.button.next":"Next","localize.wizard.button.process":"Start processing","localize.view.chooseLanguage":"Choose the language from which you want to localize the content","localize.view.summary":"Record summary","localize.view.processing":"Processing...","localize.progress.step":"Step {0} of {1}","localize.educate.translate":"Translating content will create a direct connection between the original language and the language you translate to.&lt;br&gt;\n\t\t\t\t\tThis means that moving and element or setting meta information like start- or endtime will be taken from the original content and you will not be able to set these values on a translated content element.&lt;br&gt;\n\t\t\t\t\t&lt;strong&gt;Use this when your workflow demands a strict translation workflow.&lt;\/strong&gt;\n\t\t\t\t","localize.educate.copy":"Copying content will take the content elements from the source language and create copies in a different language.&lt;br&gt;\n\t\t\t\t\tThis means that you will be able to move content elements around freely, but you will not have the benefit of being able to compare changes made in the source language later on.&lt;br&gt;\n\t\t\t\t\t&lt;strong&gt;Use this when you want to have freedom in designing your translated website.&lt;\/strong&gt;\n\t\t\t\t","error.invalidBackendLayout":"The selected page layout is mis-configured, no columns are specified to be editable. Please update your backend layout to have at least one parameter \"colPos\" set.","dragdrop.copy.message":"Press CTRL to copy","debuggerconsole.autoscroll":"Scroll down automatically","debuggerconsole.toggle.expand":"Expand","debuggerconsole.toggle.collapse":"Collapse","debuggerconsole.clear":"Clear","debuggerconsole.close":"Close","wizard.button.next":"Next","wizard.button.cancel":"Cancel","wizard.progress":"Step {0} of {1}","wizard.processing.title":"Processing..."};TYPO3.settings = {"ShowItem":{"moduleUrl":"\/typo3\/index.php?route=%2Frecord%2Finfo&amp;token=8a0ea033e4698ab17bcf4537ea9e7986d6c08a77"},"RecordHistory":{"moduleUrl":"\/typo3\/index.php?route=%2Frecord%2Fhistory&amp;token=d818bc56d5592c5d265b112194c19173a5f7d3f4"},"NewRecord":{"moduleUrl":"\/typo3\/index.php?route=%2Frecord%2Fnew&amp;token=773769953b82c8706fab831f62c6666e1370f25e"},"FormEngine":{"moduleUrl":"\/typo3\/index.php?route=%2Frecord%2Fedit&amp;token=160ac1adac1fd771e2d22e417a03d58bf5694fa4"},"RecordCommit":{"moduleUrl":"\/typo3\/index.php?route=%2Frecord%2Fcommit&amp;token=344673095dca4ff312a5ae24b283f9269d30f924"},"WebLayout":{"moduleUrl":"\/typo3\/index.php?route=%2Fweb%2Flayout%2F&amp;token=a0911db1b1bc334287b8d0433b31671a070c6399"},"AccessPermissions":{"moduleUrl":"\/typo3\/index.php?route=%2Fsystem%2FBeuserTxPermission%2F&amp;token=315e2b3cbc9eef46d041563f14f0ea1c810f4c4b"},"FileRename":{"moduleUrl":"\/typo3\/index.php?route=%2Ffile%2Frename&amp;token=da4a5563b257285577808dfdc47fda1691abc7e9"},"FileEdit":{"moduleUrl":"\/typo3\/index.php?route=%2Ffile%2Feditcontent&amp;token=ee2623dc2c9066cadf4e9f3aa5c420ee39fd173e"},"FileUpload":{"moduleUrl":"\/typo3\/index.php?route=%2Ffile%2Fupload&amp;token=b6b08837915f2a48f5c0752e0f3943fa38519c14"},"FileCreate":{"moduleUrl":"\/typo3\/index.php?route=%2Ffile%2Fnew&amp;token=90f9c95ef0c597072befcbd05e19bb122a032811"},"FileCommit":{"moduleUrl":"\/typo3\/index.php?route=%2Ffile%2Fcommit&amp;token=95431b9639b2333ae42c800672722434879c19cb"},"ImportExport":{"moduleUrl":"\/typo3\/index.php?route=%2Frecord%2Fimportexport%2F&amp;token=da81959772095aa6a7055ad45549321aaa7ef886"},"DateTimePicker":{"DateFormat":["DD-MM-YYYY","HH:mm DD-MM-YYYY"]},"ContextHelp":{"moduleUrl":"\/typo3\/index.php?route=%2Fhelp%2Fcshmanual%2F&amp;token=69d1003c86b6c01108f71b735eb6ffe1eef26608&amp;action=detail"},"ajaxUrls":{"adminPanel_saveForm":"\/typo3\/index.php?route=%2Fajax%2Fadminpanel%2Fform%2Fsave&amp;token=51ee3eee2d6b00b3f601633f3f19cc7b8a3ff83c","adminPanel_toggle":"\/typo3\/index.php?route=%2Fajax%2Fadminpanel%2FtoggleActiveState&amp;token=a15d866f0b77d67921c2af52b773af084179d23d","sc_alt_file_navframe_expandtoggle":"\/typo3\/index.php?route=%2Fajax%2Ffolder%2Ftree%2Fexpand&amp;token=d25fa3985921dc231a72ccce3b882dafcb627baa","file_process":"\/typo3\/index.php?route=%2Fajax%2Ffile%2Fprocess&amp;token=932f039ff91a14ca71e95ebaa4184c1231bd47c6","file_exists":"\/typo3\/index.php?route=%2Fajax%2Ffile%2Fexists&amp;token=2c3963dc97506b9842af0798910c60b62662dce4","record_inline_details":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Finline%2Fdetails&amp;token=2e327bed8c8d1139370432391f0f5e2b2aaa89c7","record_inline_create":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Finline%2Fcreate&amp;token=c3f3d2733c260bb24e895830b77679cdb8fa810e","record_inline_synchronizelocalize":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Finline%2Fsynchronizelocalize&amp;token=34e09dbb5ec622ee2e4af6e680e50b1ad9df0ffa","record_inline_expandcollapse":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Finline%2Fexpandcollapse&amp;token=005f0c1dfd1004d158a33ef9e6ffeb6a9bb6d5bf","site_configuration_inline_create":"\/typo3\/index.php?route=%2Fajax%2Fsiteconfiguration%2Finline%2Fcreate&amp;token=c17da4f8535565df155626112d4bd2e76cbbfe3f","site_configuration_inline_details":"\/typo3\/index.php?route=%2Fajax%2Fsiteconfiguration%2Finline%2Fdetails&amp;token=c003953a08ae6b7b253edbec4e7226315064af74","record_flex_container_add":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Fflex%2Fcontaineradd&amp;token=478dd4ef809f4aafe4ee0763580d830b7d3599db","record_suggest":"\/typo3\/index.php?route=%2Fajax%2Fwizard%2Fsuggest%2Fsearch&amp;token=102754be694377d400b481e28f2a5637595d4ea8","record_tree_data":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Ftree%2FfetchData&amp;token=857496c6d908033c3d74c54c6da2dcb2fd5fa985","page_tree_data":"\/typo3\/index.php?route=%2Fajax%2Fpage%2Ftree%2FfetchData&amp;token=74247087a29ffe63cf6d8991f3070d822d5db9ca","page_tree_configuration":"\/typo3\/index.php?route=%2Fajax%2Fpage%2Ftree%2FfetchConfiguration&amp;token=aff8e6c6ec1e2e6801851ca6c47abb1e59e3601c","page_tree_set_temporary_mount_point":"\/typo3\/index.php?route=%2Fajax%2Fpage%2Ftree%2FsetTemporaryMountPoint&amp;token=ae330b3faee5f26b13d06dbf9859b628d29fcca4","shortcut_editform":"\/typo3\/index.php?route=%2Fajax%2Fshortcut%2Feditform&amp;token=3afdef973906188fbd092d02af6b8a0c582d9ab4","shortcut_saveform":"\/typo3\/index.php?route=%2Fajax%2Fshortcut%2Fsaveform&amp;token=69313db190d9eb9788f44ff28601841a3bd28687","shortcut_list":"\/typo3\/index.php?route=%2Fajax%2Fshortcut%2Flist&amp;token=2697d97626e7c7ee4fba9efbfa8f1e71c62cf8e6","shortcut_remove":"\/typo3\/index.php?route=%2Fajax%2Fshortcut%2Fremove&amp;token=651217e8f56ea40f05764a194829e48b98671529","shortcut_create":"\/typo3\/index.php?route=%2Fajax%2Fshortcut%2Fcreate&amp;token=f15392bd54688b746f1f7e8b214aced037f2037a","systeminformation_render":"\/typo3\/index.php?route=%2Fajax%2Fsystem-information%2Frender&amp;token=1cbaaf10b1d596e95304fd6fd7b5329edb7b5468&amp;skipSessionUpdate=1","modulemenu":"\/typo3\/index.php?route=%2Fajax%2Fmodule-menu&amp;token=b5130ffb5282946c218b68385c475186a260596b","topbar":"\/typo3\/index.php?route=%2Fajax%2Ftopbar&amp;token=6b0e8e478766ffd1affe6b6b2597c6b88b8a2fc2","login":"\/typo3\/index.php?route=%2Fajax%2Flogin","logout":"\/typo3\/index.php?route=%2Fajax%2Flogout","login_refresh":"\/typo3\/index.php?route=%2Fajax%2Flogin%2Frefresh&amp;token=4d0d7350adf7fc69dce1e07dbd02f2c1abf58440","login_timedout":"\/typo3\/index.php?route=%2Fajax%2Flogin%2Ftimedout&amp;skipSessionUpdate=1","flashmessages_render":"\/typo3\/index.php?route=%2Fajax%2Fflashmessages%2Frender&amp;token=643aac5adb7f242915fa1e993c8442c4d789753e","contextmenu":"\/typo3\/index.php?route=%2Fajax%2Fcontext-menu&amp;token=6634f913e90c97254d6d6e66eff02eb8914b9707","contextmenu_clipboard":"\/typo3\/index.php?route=%2Fajax%2Fcontext-menu%2Fclipboard&amp;token=cca28d052fc4a834cee58d0bcdf74da15dda271f","record_process":"\/typo3\/index.php?route=%2Fajax%2Frecord%2Fprocess&amp;token=262da230ba89ee6b8c3779a1378fa7ff6144bda5","usersettings_process":"\/typo3\/index.php?route=%2Fajax%2Fusersettings%2Fprocess&amp;token=bae9bf8f3983c386498219acc86d86968e7b0c41","wizard_image_manipulation":"\/typo3\/index.php?route=%2Fajax%2Fwizard%2Fimage-manipulation&amp;token=b570a3bff9257eb3e34363f90ddb88cce5ba600d","livesearch":"\/typo3\/index.php?route=%2Fajax%2Flivesearch&amp;token=352aa4221b656d8567d4817f50108340f6240c05","online_media_create":"\/typo3\/index.php?route=%2Fajax%2Fonline-media%2Fcreate&amp;token=d7c3b2c2f107c3f3650bfe94f66d479626f818f7","icons":"\/typo3\/index.php?route=%2Fajax%2Ficons&amp;token=f619d351c7733e25a150c59b72fae6e1dfa6991e","icons_cache":"\/typo3\/index.php?route=%2Fajax%2Ficons%2Fcache&amp;token=34a6d28472760692b1bb1091a046fe06bcbcc5b8","link_browser_encodetypolink":"\/typo3\/index.php?route=%2Fajax%2Flink-browser%2Fencode-typolink&amp;token=ec70068528236cd2bfea7ab0effdbdc4e06a6f28","page_languages":"\/typo3\/index.php?route=%2Fajax%2Frecords%2Flocalize%2Fget-languages&amp;token=7a532204db24addf349841783d099f9efdeef355","records_localize_summary":"\/typo3\/index.php?route=%2Fajax%2Frecords%2Flocalize%2Fsummary&amp;token=fe3f44a0175ad6ddb882818bd3134de23671803c","records_localize":"\/typo3\/index.php?route=%2Fajax%2Frecords%2Flocalize&amp;token=a364ce8cabb26a586163e71a1c5a3e08a25b0da7","context_help":"\/typo3\/index.php?route=%2Fajax%2Fcontext-help&amp;token=fa919ee9baf14408aa0d8b761a5eb74bd3c480ba","user_access_permissions":"\/typo3\/index.php?route=%2Fajax%2Fusers%2Faccess%2Fpermissions&amp;token=d70a30597a21cd494945139aff87e3ed373f697d","documentation_remove":"\/typo3\/index.php?route=%2Fajax%2Fdocumentation%2Fremove&amp;token=557b8096af8f00eaf4ff4d477f427f0113646f32","t3editor_tsref":"\/typo3\/index.php?route=%2Fajax%2Ft3editor%2Ftsref&amp;token=568a09a73c680be7671f80c3efa514ed2aea744f","t3editor_codecompletion_loadtemplates":"\/typo3\/index.php?route=%2Fajax%2Ft3editor%2Fcodecompletion%2Fload-templates&amp;token=3a9d736642dcb58c94cbb11bcb32b4a7d0b24a60"}};/*]]&gt;*/
+</script>
+<script src="/typo3temp/assets/compressed/merged-c1d5e563710cd9c921dff766ce5fc97a-f7380d7be01e1e61f613c8923ba1a5c0.js?1528497573" type="text/javascript"></script>
+<script type="text/javascript">
+/*&lt;![CDATA[*/
+/*RequireJS-Module-TYPO3/CMS/Backend/LoginRefresh004a2811ef446cc85c95b2ed3ccfaf88b75ea180*/
+require(["TYPO3/CMS/Backend/LoginRefresh"], function(LoginRefresh) {
+			LoginRefresh.setIntervalTime(28740);
+			LoginRefresh.setLoginFramesetUrl('\/typo3\/index.php?route=%2Flogin%2Fframe');
+			LoginRefresh.setLogoutUrl('\/typo3\/index.php?route=%2Flogout\u0026token=6f27b39d2b8e77191f0a82f7b7a5b85bcb8e5248');
+			LoginRefresh.initialize();
+		});
+
+/*RequireJS-Module-TYPO3/CMS/Backend/ModuleMenu*/
+require(["TYPO3/CMS/Backend/ModuleMenu"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Toolbar*/
+require(["TYPO3/CMS/Backend/Toolbar"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Utility*/
+require(["TYPO3/CMS/Backend/Utility"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Notification*/
+require(["TYPO3/CMS/Backend/Notification"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Modal*/
+require(["TYPO3/CMS/Backend/Modal"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/InfoWindow*/
+require(["TYPO3/CMS/Backend/InfoWindow"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/ContextMenu*/
+require(["TYPO3/CMS/Backend/ContextMenu"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Storage*/
+require(["TYPO3/CMS/Backend/Storage"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Storage/Persistentcc4356fa79cb8f3d854d5fafa481a6b4f374fb14*/
+require(["TYPO3/CMS/Backend/Storage/Persistent"], function(PersistentStorage) {
+            PersistentStorage.load({"interfaceSetup":"backend","moduleData":[],"thumbnailsByDefault":1,"emailMeAtLogin":0,"startModule":"help_AboutAbout","titleLen":50,"edit_RTE":"1","edit_docModuleUpload":"1","resizeTextareas":1,"resizeTextareas_MaxHeight":500,"resizeTextareas_Flexible":0,"lang":"","firstLoginTimeStamp":1528497571});
+        });
+
+/*RequireJS-Module-TYPO3/CMS/Backend/DebugConsole*/
+require(["TYPO3/CMS/Backend/DebugConsole"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Toolbar/ClearCacheMenu*/
+require(["TYPO3/CMS/Backend/Toolbar/ClearCacheMenu"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/LiveSearch*/
+require(["TYPO3/CMS/Backend/LiveSearch"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Toolbar/ShortcutMenu*/
+require(["TYPO3/CMS/Backend/Toolbar/ShortcutMenu"]);
+
+/*RequireJS-Module-TYPO3/CMS/Backend/Toolbar/SystemInformationMenu*/
+require(["TYPO3/CMS/Backend/Toolbar/SystemInformationMenu"]);
+
+/*BackendInlineJavascript*/
+
+	TYPO3.configuration = {"username":"ressourcenmangeltypo3","pageModule":"web_layout","inWorkspace":false,"showRefreshLoginPopup":false};
+	/**
+	 * Frameset Module object
+	 *
+	 * Used in main modules with a frameset for submodules to keep the ID between modules
+	 * Typically that is set by something like this in a Web&gt;* sub module:
+	 *		if (top.fsMod) top.fsMod.recentIds["web"] = "'.(int)$this-&gt;id.'";
+	 * 		if (top.fsMod) top.fsMod.recentIds["file"] = "...(file reference/string)...";
+	 */
+	var fsMod = {
+		recentIds: [],					// used by frameset modules to track the most recent used id for list frame.
+		navFrameHighlightedID: [],		// used by navigation frames to track which row id was highlighted last time
+		currentBank: "0"
+	};
+
+	top.goToModule = function(modName, cMR_flag, addGetVars) {
+		TYPO3.ModuleMenu.App.showModule(modName, addGetVars);
+	}
+	
+					// start in module:
+				top.startInModule = ['help_AboutAbout', ''];
+			
+
+/*RequireJS-Module-TYPO3/CMS/Backend/ContextHelp*/
+require(["TYPO3/CMS/Backend/ContextHelp"]);
+
+/*jumpToUrl*/
+
+function jumpToUrl(URL) {
+	window.location.href = URL;
+	return false;
+}
+	
+
+/*]]&gt;*/
+</script>
+
+
+
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/LoginRefresh" src="/typo3/sysext/backend/Resources/Public/JavaScript/LoginRefresh.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/ModuleMenu" src="/typo3/sysext/backend/Resources/Public/JavaScript/ModuleMenu.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Toolbar" src="/typo3/sysext/backend/Resources/Public/JavaScript/Toolbar.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Utility" src="/typo3/sysext/backend/Resources/Public/JavaScript/Utility.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Notification" src="/typo3/sysext/backend/Resources/Public/JavaScript/Notification.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Modal" src="/typo3/sysext/backend/Resources/Public/JavaScript/Modal.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/InfoWindow" src="/typo3/sysext/backend/Resources/Public/JavaScript/InfoWindow.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/ContextMenu" src="/typo3/sysext/backend/Resources/Public/JavaScript/ContextMenu.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Storage" src="/typo3/sysext/backend/Resources/Public/JavaScript/Storage.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Storage/Persistent" src="/typo3/sysext/backend/Resources/Public/JavaScript/Storage/Persistent.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/DebugConsole" src="/typo3/sysext/backend/Resources/Public/JavaScript/DebugConsole.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Toolbar/ClearCacheMenu" src="/typo3/sysext/backend/Resources/Public/JavaScript/Toolbar/ClearCacheMenu.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/LiveSearch" src="/typo3/sysext/backend/Resources/Public/JavaScript/LiveSearch.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Toolbar/ShortcutMenu" src="/typo3/sysext/backend/Resources/Public/JavaScript/Toolbar/ShortcutMenu.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Toolbar/SystemInformationMenu" src="/typo3/sysext/backend/Resources/Public/JavaScript/Toolbar/SystemInformationMenu.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/ContextHelp" src="/typo3/sysext/backend/Resources/Public/JavaScript/ContextHelp.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Enum/Viewport/ScaffoldIdentifier" src="/typo3/sysext/backend/Resources/Public/JavaScript/Enum/Viewport/ScaffoldIdentifier.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Event/ClientRequest" src="/typo3/sysext/backend/Resources/Public/JavaScript/Event/ClientRequest.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Event/TriggerRequest" src="/typo3/sysext/backend/Resources/Public/JavaScript/Event/TriggerRequest.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Enum/Severity" src="/typo3/sysext/backend/Resources/Public/JavaScript/Enum/Severity.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Severity" src="/typo3/sysext/backend/Resources/Public/JavaScript/Severity.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Icons" src="/typo3/sysext/backend/Resources/Public/JavaScript/Icons.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/ContextMenuActions" src="/typo3/sysext/backend/Resources/Public/JavaScript/ContextMenuActions.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Storage/Client" src="/typo3/sysext/backend/Resources/Public/JavaScript/Storage/Client.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/autocomplete" src="/typo3/sysext/core/Resources/Public/JavaScript/Contrib/jquery.autocomplete.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/jquery.clearable" src="/typo3/sysext/backend/Resources/Public/JavaScript/jquery.clearable.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Popover" src="/typo3/sysext/backend/Resources/Public/JavaScript/Popover.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport/ContentContainer" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport/ContentContainer.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Event/ConsumerScope" src="/typo3/sysext/backend/Resources/Public/JavaScript/Event/ConsumerScope.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport/Loader" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport/Loader.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport/NavigationContainer" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport/NavigationContainer.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport/Topbar" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport/Topbar.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Event/InteractionRequest" src="/typo3/sysext/backend/Resources/Public/JavaScript/Event/InteractionRequest.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport/AbstractContainer" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport/AbstractContainer.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nprogress" src="/typo3/sysext/core/Resources/Public/JavaScript/Contrib/nprogress.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Enum/Viewport/TopbarIdentifiers" src="/typo3/sysext/backend/Resources/Public/JavaScript/Enum/Viewport/TopbarIdentifiers.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="TYPO3/CMS/Backend/Viewport/PageTree" src="/typo3/sysext/backend/Resources/Public/JavaScript/Viewport/PageTree.js?bust=229af87cb9256fa8cd551d8e88ab70d78605ce3d"></script></head><body id="main"><div class="scaffold t3js-scaffold scaffold-modulemenu-expanded">
+	<div class="t3js-scaffold-header">
+		<div class="scaffold-topbar t3js-scaffold-topbar" data-topbar-identifier="topbar">
+	<div class="topbar">
+		<div class="topbar-header t3js-topbar-header" style="padding-right: 648px;">
+			<button class="topbar-button topbar-button-modulemenu t3js-topbar-button-modulemenu">
+				<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-menu" data-identifier="actions-menu">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path d="M14.5 9h-13a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5zM14.5 6h-13a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5zM14.5 12h-13a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5z"/></g></svg>
+	</span>
+	
+</span>
+			</button>
+			<button class="topbar-button topbar-button-navigationcomponent t3js-topbar-button-navigationcomponent" disabled=""><span class="t3js-icon icon icon-size-small icon-state-default icon-actions-pagetree" data-identifier="actions-pagetree">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path d="M6 3h8v2H6zM6 6h8v2H6zM6 9h8v2H6zM6 12h8v2H6zM5 5V4H3V2H2v12h3v-1H3v-2h2v-1H3V8h2V7H3V5z"/></g></svg>
+	</span>
+	<span class="icon-overlay icon-overlay-readonly"><img src="/typo3/sysext/core/Resources/Public/Icons/T3Icons/overlay/overlay-readonly.svg" width="16" height="16" /></span>
+</span></button>
+			<div class="topbar-header-site">
+				<a href="./" target="_top" title="ressourcenmangeltypo3 - 9.3.0-dev">
+					<span class="topbar-header-site-logo">
+						<img src="/typo3/sysext/backend/Resources/Public/Images/typo3_logo_orange.svg" width="22" height="22" title="TYPO3 Content Management System" alt="" />
+					</span>
+					<span class="topbar-header-site-title">
+						<span class="topbar-header-site-name">ressourcenmangeltypo3</span>
+						<span class="topbar-header-site-version">9.3.0-dev</span>
+					</span>
+				</a>
+			</div>
+			<button class="topbar-button topbar-button-toolbar t3js-topbar-button-toolbar">
+				<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-system-extension-configure" data-identifier="actions-system-extension-configure">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14.819 6.948l-2.122-.606a4.958 4.958 0 0 0-.201-.494l1.07-1.926a.25.25 0 0 0-.042-.298l-1.148-1.148a.25.25 0 0 0-.298-.042l-1.926 1.07a4.958 4.958 0 0 0-.494-.201l-.606-2.122A.25.25 0 0 0 8.811 1H7.189a.249.249 0 0 0-.24.181l-.607 2.123c-.169.06-.334.124-.494.201l-1.926-1.07a.249.249 0 0 0-.298.042L2.477 3.624a.249.249 0 0 0-.042.298l1.07 1.926c-.077.16-.141.325-.201.494l-2.123.606A.25.25 0 0 0 1 7.189v1.623c0 .112.074.21.181.24l2.122.606c.06.169.124.334.201.494l-1.07 1.926a.25.25 0 0 0 .042.298l1.148 1.148a.25.25 0 0 0 .298.042l1.926-1.07c.16.077.325.141.494.201l.606 2.122a.25.25 0 0 0 .241.181h1.623c.112 0 .21-.074.24-.181l.606-2.122c.169-.06.334-.124.494-.201l1.926 1.07a.25.25 0 0 0 .298-.042l1.148-1.148a.25.25 0 0 0 .042-.298l-1.07-1.926c.077-.16.141-.325.201-.494l2.122-.606A.25.25 0 0 0 15 8.811V7.189a.25.25 0 0 0-.181-.241zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" class="icon-color"/></svg>
+	</span>
+	
+</span>
+			</button>
+			<button class="topbar-button topbar-button-search t3js-topbar-button-search">
+				<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-search" data-identifier="actions-search">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.92 15c-.29 0-.56-.12-.76-.32l-2.89-2.88c-.98.68-2.16 1.04-3.36 1.04C3.65 12.85 1 10.2 1 6.92 1 3.65 3.65 1 6.92 1s5.92 2.65 5.92 5.92c0 1.19-.36 2.37-1.04 3.36l2.89 2.89c.19.19.31.47.31.76 0 .58-.49 1.07-1.08 1.07zm-7-12.58c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z" class="icon-color"/></svg>
+	</span>
+	
+</span>
+			</button>
+		</div>
+	</div>
+</div>
+<div class="scaffold-toolbar t3js-scaffold-toolbar" data-toolbar-identifier="toolbar">
+	<div class="toolbar t3js-topbar-toolbar">
+		<ul class="toolbar-list" data-typo3-role="typo3-module-menu">
+			<li class="toolbar-item t3js-toolbar-item" id="typo3-cms-backend-backend-toolbaritems-shortcuttoolbaritem" data-toolbar-identifier="shortcut-toolbar-item">
+<a href="#" class="toolbar-item-link dropdown-toggle" data-toggle="dropdown">
+<span class="toolbar-item-icon" title="Bookmarks">
+	<span class="t3js-icon icon icon-size-small icon-state-default icon-apps-toolbar-menu-shortcut" data-identifier="apps-toolbar-menu-shortcut">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5.323 5H1C.109 5-.337 6.077.293 6.707l3.534 3.534-1.755 4.388c-.327.816.484 1.626 1.3 1.3L8 14.077l4.629 1.851c.816.327 1.626-.484 1.3-1.3l-1.755-4.388 3.534-3.534C16.337 6.077 15.891 5 15 5h-4.323L8.928.629c-.335-.838-1.522-.838-1.857 0L5.323 5z" class="icon-color"/></svg>
+	</span>
+	
+</span>
+</span>
+<span class="toolbar-item-title">
+	Bookmarks
+</span>
+
+</a>
+<div class="dropdown-menu" role="menu">
+<h3 class="dropdown-headline">
+	Bookmarks
+</h3>
+<hr />
+
+		
+	
+	
+		<p>This is the bookmarks menu. You do not have any bookmarks added yet, you can do so by clicking the bookmark icon <span title="Bookmarks"><span class="t3js-icon icon icon-size-small icon-state-default icon-actions-system-shortcut-new" data-identifier="actions-system-shortcut-new">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 1l2 5h5l-4 4 2 5-5-2-5 2 2-5-4-4h5l2-5M5.323 5H1C.109 5-.337 6.077.293 6.707l3.534 3.534-1.755 4.388c-.327.816.484 1.626 1.3 1.3L8 14.077l4.629 1.851c.816.327 1.626-.484 1.3-1.3l-1.755-4.388 3.534-3.534C16.337 6.077 15.891 5 15 5h-4.323L8.928.629c-.335-.838-1.522-.838-1.857 0L5.323 5z" class="icon-color"/></svg>
+	</span>
+	
+</span></span>, which you can find on each page in the backend.</p>
+	
+
+	
+
+
+
+</div>
+</li>
+<li class="toolbar-item t3js-toolbar-item" id="typo3-cms-backend-backend-toolbaritems-clearcachetoolbaritem" data-toolbar-identifier="clear-cache-toolbar-item">
+<a href="#" class="toolbar-item-link dropdown-toggle" data-toggle="dropdown">
+
+<span class="toolbar-item-icon" title="Clear cache"><span class="t3js-icon icon icon-size-small icon-state-default icon-apps-toolbar-menu-cache" data-identifier="apps-toolbar-menu-cache">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.011 14.707l5.811-7.999c.161-.224.141-.669-.285-.669H9.234c-.271 0-.393-.2-.262-.447l2.046-3.875c.147-.24.143-.717-.3-.717H6.514a.675.675 0 0 0-.618.477L4.12 8.527c-.066.262.105.477.383.477h2.039c.284 0 .423.211.325.472 0 0-1.866 4.929-1.866 5.025a.498.498 0 0 0 .865.34.467.467 0 0 0 .145-.134z" class="icon-color"/></svg>
+	</span>
+	
+</span></span>
+<span class="toolbar-item-title">Clear cache</span>
+
+
+
+</a>
+<div class="dropdown-menu" role="menu">
+
+<h3 class="dropdown-headline">
+	Clear cache
+</h3>
+<hr />
+<div class="dropdown-table">
+	
+		<div class="dropdown-table-row">
+			<a href="/typo3/index.php?route=%2Frecord%2Fcommit&amp;token=344673095dca4ff312a5ae24b283f9269d30f924&amp;cacheCmd=pages" class="toolbar-cache-flush-action">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-system-cache-clear-impact-low" data-identifier="actions-system-cache-clear-impact-low">
+	<span class="icon-markup">
+<img src="/typo3/sysext/core/Resources/Public/Icons/T3Icons/actions/actions-system-cache-clear-impact-low.svg" width="16" height="16" />
+	</span>
+	
+</span>
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-text">
+					Flush frontend caches
+					<br />
+					<small class="text-muted">Clear frontend and page-related caches.
+					</small>
+				</div>
+			</a>
+		</div>
+	
+		<div class="dropdown-table-row">
+			<a href="/typo3/index.php?route=%2Frecord%2Fcommit&amp;token=344673095dca4ff312a5ae24b283f9269d30f924&amp;cacheCmd=all" class="toolbar-cache-flush-action">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-system-cache-clear-impact-high" data-identifier="actions-system-cache-clear-impact-high">
+	<span class="icon-markup">
+<img src="/typo3/sysext/core/Resources/Public/Icons/T3Icons/actions/actions-system-cache-clear-impact-high.svg" width="16" height="16" />
+	</span>
+	
+</span>
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-text">
+					Flush all caches
+					<br />
+					<small class="text-muted">Clear all system-related caches, including localization, extension configuration, file caches and opcode caches. Rebuilding this cache may take some time.
+					</small>
+				</div>
+			</a>
+		</div>
+	
+</div>
+
+
+</div>
+</li>
+<li class="toolbar-item t3js-toolbar-item" id="typo3-cms-backend-backend-toolbaritems-helptoolbaritem" data-toolbar-identifier="help-toolbar-item">
+<a href="#" class="toolbar-item-link dropdown-toggle" data-toggle="dropdown">
+
+<span class="toolbar-item-icon" title="Help"><span class="t3js-icon icon icon-size-small icon-state-default icon-apps-toolbar-menu-help" data-identifier="apps-toolbar-menu-help">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path d="M8 1.5c3.584 0 6.5 2.916 6.5 6.5s-2.916 6.5-6.5 6.5S1.5 11.584 1.5 8 4.416 1.5 8 1.5M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0z"/><path d="M8.75 11h-1.5a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h1.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25zM10.951 5.451A3.01 3.01 0 0 0 8.552 3.05a3.003 3.003 0 0 0-3.541 2.683c-.012.143.111.267.255.267h1.511c.127 0 .219-.098.247-.222A1.002 1.002 0 0 1 9 6a.983.983 0 0 1-.482.833A2.984 2.984 0 0 0 7 9.433v.317c0 .138.112.25.25.25h1.5A.25.25 0 0 0 9 9.75v-.317c0-.359.201-.659.486-.835a2.99 2.99 0 0 0 1.465-3.147z"/></g></svg>
+	</span>
+	
+</span></span>
+<span class="toolbar-item-title">Help</span>
+
+
+
+</a>
+<div class="dropdown-menu" role="menu">
+
+<h3 class="dropdown-headline">
+	Help
+</h3>
+<hr />
+<div class="dropdown-table">
+	
+		<div class="dropdown-table-row" id="help_cshmanual" data-modulename="help_cshmanual" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="dropdown-table-column dropdown-table-icon">
+				<span class="t3js-icon icon icon-size-default icon-state-default icon-module-help_cshmanual" data-identifier="module-help_cshmanual">
+	<span class="icon-markup">
+<img src="/typo3/sysext/documentation/Resources/Public/Icons/module-cshmanual.svg" width="32" height="32" />
+	</span>
+	
+</span>
+			</div>
+			<div class="dropdown-table-column dropdown-table-title">
+				<a href="#" data-link="/typo3/index.php?route=%2Fhelp%2Fcshmanual%2F&amp;token=69d1003c86b6c01108f71b735eb6ffe1eef26608" title="TYPO3 Inline Manual">
+					TYPO3 Manual
+				</a>
+			</div>
+		</div>
+	
+		<div class="dropdown-table-row" id="help_DocumentationDocumentation" data-modulename="help_DocumentationDocumentation" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="dropdown-table-column dropdown-table-icon">
+				<span class="t3js-icon icon icon-size-default icon-state-default icon-module-help_DocumentationDocumentation" data-identifier="module-help_DocumentationDocumentation">
+	<span class="icon-markup">
+<img src="/typo3/sysext/documentation/Resources/Public/Icons/module-documentation.svg" width="32" height="32" />
+	</span>
+	
+</span>
+			</div>
+			<div class="dropdown-table-column dropdown-table-title">
+				<a href="#" data-link="/typo3/index.php?route=%2Fhelp%2FDocumentationDocumentation%2F&amp;token=500918afbad8eac9e0367b43df005127cd2b3866" title="Documentation">
+					Documentation
+				</a>
+			</div>
+		</div>
+	
+		<div class="dropdown-table-row active" id="help_AboutAbout" data-modulename="help_AboutAbout" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="dropdown-table-column dropdown-table-icon">
+				<span class="t3js-icon icon icon-size-default icon-state-default icon-module-help_AboutAbout" data-identifier="module-help_AboutAbout">
+	<span class="icon-markup">
+<img src="/typo3/sysext/about/Resources/Public/Icons/module-about.svg" width="32" height="32" />
+	</span>
+	
+</span>
+			</div>
+			<div class="dropdown-table-column dropdown-table-title">
+				<a href="#" data-link="/typo3/index.php?route=%2Fhelp%2FAboutAbout%2F&amp;token=87c3b7a8594907c1eb2bcef21415a7c77de78731" title="About TYPO3 CMS">
+					About TYPO3 CMS
+				</a>
+			</div>
+		</div>
+	
+</div>
+
+
+</div>
+</li>
+<li class="toolbar-item t3js-toolbar-item" id="typo3-cms-backend-backend-toolbaritems-systeminformationtoolbaritem" data-toolbar-identifier="system-information-toolbar-item">
+<a href="#" class="toolbar-item-link dropdown-toggle" data-toggle="dropdown">
+
+<span class="toolbar-item-icon" title="System Information"><span class="t3js-icon icon icon-size-small icon-state-default icon-actions-system-list-open" data-identifier="actions-system-list-open">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path d="M14.5 2h-13c-.3 0-.5.2-.5.5v11c0 .3.2.5.5.5h13c.3 0 .5-.2.5-.5v-11c0-.3-.2-.5-.5-.5zM14 13H2V3h12v10z"/><path d="M3 4h2v2H3zM6 4h7v2H6zM3 7h2v2H3zM6 7h7v2H6zM3 10h2v2H3zM6 10h7v2H6z"/></g></svg>
+	</span>
+	
+</span></span>
+<span class="toolbar-item-title">System Information</span>
+
+<span class="t3js-systeminformation-counter toolbar-item-badge badge badge-danger">1</span>
+
+
+</a>
+<div class="dropdown-menu" role="menu">
+<span class="systeminformationtoolbaritem-container t3js-systeminformation-container" data-count="1" data-severityclass="badge-danger"></span>
+
+<h3 class="dropdown-headline">
+	Application Information
+</h3>
+<p class="dropdown-text typo3-module-menu-item submodule mod-tools_toolsenvironment" data-modulename="tools_toolsenvironment">
+	
+		This is a short system overview. For advanced information please head to the <a href="/typo3/index.php?route=%2Ftools%2Ftoolsenvironment%2F&amp;token=5c68d271457c53849c57d031359d4940bbc025a4">Environment Module</a>.
+	
+</p>
+
+
+	<hr />
+	<div class="dropdown-table">
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-typo3-version" data-identifier="information-typo3-version">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.1 10.3c-.2 0-.3.1-.5.1C9 10.4 6.8 5 6.8 3.2c0-.7.2-.9.4-1.1-2 .2-4.2.9-4.9 1.8-.2.2-.3.6-.3 1 0 2.8 3 9.2 5.1 9.2 1 0 2.6-1.6 4-3.8m-1-8.4c1.9 0 3.9.3 3.9 1.4 0 2.2-1.4 4.9-2.1 4.9C10.6 8.3 9 4.7 9 2.9c0-.8.3-1 1.1-1" class="icon-color"/></svg>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					TYPO3 Version
+					
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value ">
+					9.3.0-dev
+				</div>
+			</div>
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-webserver" data-identifier="information-webserver">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-server"></i></span>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					Webserver
+					
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value ">
+					PHP 7.2.4 Development Server
+				</div>
+			</div>
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-php-version" data-identifier="information-php-version">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-code"></i></span>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					PHP Version
+					
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value ">
+					7.2.4
+				</div>
+			</div>
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-database" data-identifier="information-database">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-database"></i></span>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					Database
+					 (Default)
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value ">
+					MySQL 5.7.21
+				</div>
+			</div>
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-application-context" data-identifier="information-application-context">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-tasks"></i></span>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					Application Context
+					
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value text-success">
+					Production
+				</div>
+			</div>
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-git" data-identifier="information-git">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-git"></i></span>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					GIT Revision
+					
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value ">
+					bc5dcaacef [master]
+				</div>
+			</div>
+		
+			<div class="dropdown-table-row">
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-icon">
+					
+							<span class="t3js-icon icon icon-size-small icon-state-default icon-information-os-apple" data-identifier="information-os-apple">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-apple"></i></span>
+	</span>
+	
+</span>
+						
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-title">
+					Operating System
+					
+				</div>
+				<div class="dropdown-table-column dropdown-table-column-top dropdown-table-value ">
+					Darwin 17.6.0
+				</div>
+			</div>
+		
+	</div>
+
+
+<hr />
+
+
+		
+			
+					<p class="dropdown-text text-success">
+						Your TYPO3 version is up-to-date.
+					</p>
+				
+		
+			
+					<p id="systeminformation_system_BelogLog" class="dropdown-text t3js-systeminformation-module typo3-module-menu-item submodule mod-system_BelogLog" data-modulename="system_BelogLog" data-moduleparams="tx_belog_system_beloglog%5Bconstraint%5D%5Baction%5D=-1">
+						<span class="text-danger">We have found 1 errors. Please check your <a href="/typo3/index.php?route=%2Fsystem%2FBelogLog%2F&amp;token=438932d428cb5cd464b55db52554d4872c7d02a9&amp;tx_belog_system_beloglog%5Bconstraint%5D%5Baction%5D=-1">system log</a>.</span>
+					</p>
+				
+		
+	
+
+</div>
+</li>
+<li class="toolbar-item t3js-toolbar-item toolbar-item-user" id="typo3-cms-backend-backend-toolbaritems-usertoolbaritem" data-toolbar-identifier="user-toolbar-item">
+<a href="#" class="toolbar-item-link dropdown-toggle" data-toggle="dropdown">
+
+
+<span class="toolbar-item-avatar"><span class="avatar">
+	<span class="avatar-image">
+		<img src="/typo3/sysext/core/Resources/Public/Icons/T3Icons/avatar/avatar-default.svg" width="32" height="32" />
+	</span>
+	
+</span>
+</span>
+
+		<span class="toolbar-item-name" title="">
+			ressourcenmangeltypo3
+		</span>
+	
+
+
+</a>
+<div class="dropdown-menu" role="menu">
+
+<h3 class="dropdown-headline">
+	User
+</h3>
+<hr />
+
+	<div class="dropdown-table">
+		
+			<div class="dropdown-table-row" id="user_setup" data-modulename="user_setup" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+				<div class="dropdown-table-column dropdown-table-icon"><span class="t3js-icon icon icon-size-default icon-state-default icon-module-user_setup" data-identifier="module-user_setup">
+	<span class="icon-markup">
+<img src="/typo3/sysext/setup/Resources/Public/Icons/module-setup.svg" width="32" height="32" />
+	</span>
+	
+</span></div>
+				<div class="dropdown-table-column dropdown-table-title">
+					<a href="#" data-link="/typo3/index.php?route=%2Fuser%2Fsetup%2F&amp;token=b0585950a5eff737476e0fdb77229f9d5c5cec0e" title="Personal user setup">
+						User settings
+					</a>
+				</div>
+			</div>
+		
+	</div>
+	<hr />
+
+
+<a href="/typo3/index.php?route=%2Flogout&amp;token=6f27b39d2b8e77191f0a82f7b7a5b85bcb8e5248" class="btn btn-danger pull-left" target="_top">
+	<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-logout" data-identifier="actions-logout">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g class="icon-color"><path d="M9 10v4H2V2h7v4h1V1.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V10H9z"/><path d="M10.983 5.041a.5.5 0 0 1 .812-.39l3.7 2.96a.5.5 0 0 1 0 .78l-3.7 2.96a.5.5 0 0 1-.812-.39V9H6V7h4.983V5.041z"/></g></svg>
+	</span>
+	
+</span>
+	
+			Logout
+		
+</a>
+
+
+</div>
+</li>
+<li class="toolbar-item t3js-toolbar-item toolbar-item-search t3js-toolbar-item-search" id="typo3-cms-backend-backend-toolbaritems-livesearchtoolbaritem" data-toolbar-identifier="live-search-toolbar-item">
+
+<form class="t3js-topbar-navigation-search toolbar-item-search-form live-search-wrapper" role="search">
+	<div class="form-group">
+		<div class="form-control-holder">
+			<div class="form-control-icon">
+				<span class="t3js-icon icon icon-size-small icon-state-default icon-apps-toolbar-menu-search" data-identifier="apps-toolbar-menu-search">
+	<span class="icon-markup">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.92 15c-.29 0-.56-.12-.76-.32l-2.89-2.88c-.98.68-2.16 1.04-3.36 1.04C3.65 12.85 1 10.2 1 6.92 1 3.65 3.65 1 6.92 1s5.92 2.65 5.92 5.92c0 1.19-.36 2.37-1.04 3.36l2.89 2.89c.19.19.31.47.31.76 0 .58-.49 1.07-1.08 1.07zm-7-12.58c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z" class="icon-color"/></svg>
+	</span>
+	
+</span>
+			</div>
+			<div class="form-control-clearable"><input type="text" class="form-control toolbar-item-search-field t3js-topbar-navigation-search-field t3js-clearable" placeholder="Search" id="live-search-box" autocomplete="off" /><button type="button" class="close" tabindex="-1" aria-hidden="true" style="display: none;"><span class="t3js-icon icon icon-size-small icon-state-default icon-actions-close" data-identifier="actions-close"><span class="icon-markup"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M11.9 5.5L9.4 8l2.5 2.5c.2.2.2.5 0 .7l-.7.7c-.2.2-.5.2-.7 0L8 9.4l-2.5 2.5c-.2.2-.5.2-.7 0l-.7-.7c-.2-.2-.2-.5 0-.7L6.6 8 4.1 5.5c-.2-.2-.2-.5 0-.7l.7-.7c.2-.2.5-.2.7 0L8 6.6l2.5-2.5c.2-.2.5-.2.7 0l.7.7c.2.2.2.5 0 .7z" class="icon-color"/></svg></span></span></button></div>
+		</div>
+	</div>
+</form>
+<a href="#" class="dropdown-toggle t3js-toolbar-search-dropdowntoggle" data-toggle="dropdown" aria-expanded="false"></a>
+<div class="dropdown-menu" role="menu"><div class="t3js-toolbar-item-search" style=""></div></div>
+
+
+</li>
+		</ul>
+	</div>
+</div>
+
+	</div>
+	<div class="scaffold-modulemenu t3js-scaffold-modulemenu" style="overflow: auto;">
+		<div class="modulemenu t3js-modulemenu">
+			<ul class="nav nav-modules" data-role="modulemenu" id="menu">
+	
+		<li class="modulemenu-group expanded" id="web" data-modulename="web" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="modulemenu-group-header">
+				<span class="modulemenu-icon modulemenu-group-icon">
+						
+								<span class="t3js-icon icon icon-size-default icon-state-default icon-module-web" data-identifier="module-web">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-file-o"></i></span>
+	</span>
+	
+</span>
+							
+				</span>
+				<span class="modulemenu-group-title">
+					Web <span class="caret"></span>
+				</span>
+			</div>
+			<ul class="modulemenu-group-container">
+				
+					<li id="web_layout" class="modulemenu-item t3js-mainmodule" data-modulename="web" data-navigationcomponentid="TYPO3/CMS/Backend/PageTree/PageTreeElement" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fweb%2Flayout%2F&amp;token=a0911db1b1bc334287b8d0433b31671a070c6399" class="modulemenu-item-link" title="Page content">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-web_layout" data-identifier="module-web_layout">
+	<span class="icon-markup">
+<img src="/typo3/sysext/backend/Resources/Public/Icons/module-page.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Page
+							</span>
+						</a>
+					</li>
+				
+					<li id="web_ViewpageView" class="modulemenu-item t3js-mainmodule" data-modulename="web" data-navigationcomponentid="TYPO3/CMS/Backend/PageTree/PageTreeElement" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fweb%2FViewpageView%2F&amp;token=e8543c240cd58dd35614dac086ff19ae1c920a7e" class="modulemenu-item-link" title="View page">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-web_ViewpageView" data-identifier="module-web_ViewpageView">
+	<span class="icon-markup">
+<img src="/typo3/sysext/viewpage/Resources/Public/Icons/module-viewpage.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								View
+							</span>
+						</a>
+					</li>
+				
+					<li id="web_list" class="modulemenu-item t3js-mainmodule" data-modulename="web" data-navigationcomponentid="TYPO3/CMS/Backend/PageTree/PageTreeElement" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fweb%2Flist%2F&amp;token=3d281e0a1d59261c4182407a902e4be2dc2c94df" class="modulemenu-item-link" title="List of database-records">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-web_list" data-identifier="module-web_list">
+	<span class="icon-markup">
+<img src="/typo3/sysext/recordlist/Resources/Public/Icons/module-list.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								List
+							</span>
+						</a>
+					</li>
+				
+					<li id="web_FormFormbuilder" class="modulemenu-item t3js-mainmodule" data-modulename="web" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fweb%2FFormFormbuilder%2F&amp;token=3b76393e3f8de69bac3da205c579b4f01ebc199c" class="modulemenu-item-link" title="Build custom forms">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-web_FormFormbuilder" data-identifier="module-web_FormFormbuilder">
+	<span class="icon-markup">
+<img src="/typo3/sysext/form/Resources/Public/Icons/module-form.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Forms
+							</span>
+						</a>
+					</li>
+				
+					<li id="web_info" class="modulemenu-item t3js-mainmodule" data-modulename="web" data-navigationcomponentid="TYPO3/CMS/Backend/PageTree/PageTreeElement" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fweb%2Finfo%2F&amp;token=097beea9fbe837244d397b2088d88d4e66dad75b" class="modulemenu-item-link" title="Page related information, eg. hit statistics, change log, record counts">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-web_info" data-identifier="module-web_info">
+	<span class="icon-markup">
+<img src="/typo3/sysext/info/Resources/Public/Icons/module-info.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Info
+							</span>
+						</a>
+					</li>
+				
+					<li id="web_ts" class="modulemenu-item t3js-mainmodule" data-modulename="web" data-navigationcomponentid="TYPO3/CMS/Backend/PageTree/PageTreeElement" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fweb%2Fts%2F&amp;token=44a7614b049df2edd6e3c43fdc626acda20a5652" class="modulemenu-item-link" title="Template tools">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-web_ts" data-identifier="module-web_ts">
+	<span class="icon-markup">
+<img src="/typo3/sysext/tstemplate/Resources/Public/Icons/module-tstemplate.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Template
+							</span>
+						</a>
+					</li>
+				
+			</ul>
+		</li>
+	
+		<li class="modulemenu-group expanded" id="site" data-modulename="site" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="modulemenu-group-header">
+				<span class="modulemenu-icon modulemenu-group-icon">
+						
+								<span class="t3js-icon icon icon-size-default icon-state-default icon-module-site" data-identifier="module-site">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-globe"></i></span>
+	</span>
+	
+</span>
+							
+				</span>
+				<span class="modulemenu-group-title">
+					Site Management <span class="caret"></span>
+				</span>
+			</div>
+			<ul class="modulemenu-group-container">
+				
+					<li id="site_configuration" class="modulemenu-item t3js-mainmodule" data-modulename="site" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsite%2Fconfiguration%2F&amp;token=43108bfb4c4df59624adfec39caef54585a9fdad" class="modulemenu-item-link" title="Site configuration">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-site_configuration" data-identifier="module-site_configuration">
+	<span class="icon-markup">
+<img src="/typo3/sysext/backend/Resources/Public/Icons/module-sites.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Configuration
+							</span>
+						</a>
+					</li>
+				
+					<li id="site_redirects" class="modulemenu-item t3js-mainmodule" data-modulename="site" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsite%2Fredirects%2F&amp;token=cbd0db2390404a8d2dacd9af8972a7462f8da58a" class="modulemenu-item-link" title="Redirect Administration">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-site_redirects" data-identifier="module-site_redirects">
+	<span class="icon-markup">
+<img src="/typo3/sysext/redirects/Resources/Public/Icons/Extension.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Redirects
+							</span>
+						</a>
+					</li>
+				
+			</ul>
+		</li>
+	
+		<li class="modulemenu-group expanded" id="file" data-modulename="file" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="modulemenu-group-header">
+				<span class="modulemenu-icon modulemenu-group-icon">
+						
+								<span class="t3js-icon icon icon-size-default icon-state-default icon-module-file" data-identifier="module-file">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-image"></i></span>
+	</span>
+	
+</span>
+							
+				</span>
+				<span class="modulemenu-group-title">
+					File <span class="caret"></span>
+				</span>
+			</div>
+			<ul class="modulemenu-group-container">
+				
+					<li id="file_FilelistList" class="modulemenu-item t3js-mainmodule" data-modulename="file" data-navigationcomponentid="" data-navigationframescript="/typo3/index.php?route=%2Ffolder%2Ftree&amp;token=e253d188fdd99f37fbf278e323a74f3ab0479253" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Ffile%2FFilelistList%2F&amp;token=1320d674a44a3cab4d03aea6d866866e90816208" class="modulemenu-item-link" title="Listing of files in the directory">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-file_FilelistList" data-identifier="module-file_FilelistList">
+	<span class="icon-markup">
+<img src="/typo3/sysext/filelist/Resources/Public/Icons/module-filelist.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Filelist
+							</span>
+						</a>
+					</li>
+				
+			</ul>
+		</li>
+	
+		<li class="modulemenu-group expanded" id="tools" data-modulename="tools" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="modulemenu-group-header">
+				<span class="modulemenu-icon modulemenu-group-icon">
+						
+								<span class="t3js-icon icon icon-size-default icon-state-default icon-module-tools" data-identifier="module-tools">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-rocket"></i></span>
+	</span>
+	
+</span>
+							
+				</span>
+				<span class="modulemenu-group-title">
+					Admin tools <span class="caret"></span>
+				</span>
+			</div>
+			<ul class="modulemenu-group-container">
+				
+					<li id="tools_toolsmaintenance" class="modulemenu-item t3js-mainmodule" data-modulename="tools" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Ftools%2Ftoolsmaintenance%2F&amp;token=2f5af755a83bd1c61b3fa71eb3b4cb56154d3a7b" class="modulemenu-item-link" title="Maintenance">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-install-maintenance" data-identifier="module-install-maintenance">
+	<span class="icon-markup">
+<img src="/typo3/sysext/install/Resources/Public/Icons/module-install-maintenance.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Maintenance
+							</span>
+						</a>
+					</li>
+				
+					<li id="tools_toolssettings" class="modulemenu-item t3js-mainmodule" data-modulename="tools" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Ftools%2Ftoolssettings%2F&amp;token=1654131cda3695bb0489f376ab6b6c26b85014c2" class="modulemenu-item-link" title="Settings">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-install-settings" data-identifier="module-install-settings">
+	<span class="icon-markup">
+<img src="/typo3/sysext/install/Resources/Public/Icons/module-install-settings.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Settings
+							</span>
+						</a>
+					</li>
+				
+					<li id="tools_toolsupgrade" class="modulemenu-item t3js-mainmodule" data-modulename="tools" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Ftools%2Ftoolsupgrade%2F&amp;token=f333cae92dea8e6214d258adb4a3cc85b7e094c0" class="modulemenu-item-link" title="Upgrade">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-install-upgrade" data-identifier="module-install-upgrade">
+	<span class="icon-markup">
+<img src="/typo3/sysext/install/Resources/Public/Icons/module-install-upgrade.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Upgrade
+							</span>
+						</a>
+					</li>
+				
+					<li id="tools_toolsenvironment" class="modulemenu-item t3js-mainmodule" data-modulename="tools" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Ftools%2Ftoolsenvironment%2F&amp;token=5c68d271457c53849c57d031359d4940bbc025a4" class="modulemenu-item-link" title="Environment">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-install-environment" data-identifier="module-install-environment">
+	<span class="icon-markup">
+<img src="/typo3/sysext/install/Resources/Public/Icons/module-install-environment.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Environment
+							</span>
+						</a>
+					</li>
+				
+					<li id="tools_ExtensionmanagerExtensionmanager" class="modulemenu-item t3js-mainmodule" data-modulename="tools" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Ftools%2FExtensionmanagerExtensionmanager%2F&amp;token=2a6f7c33123cbb9bc41cd1f97331606553ac776e" class="modulemenu-item-link" title="TYPO3 Extension Manager">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-tools_ExtensionmanagerExtensionmanager" data-identifier="module-tools_ExtensionmanagerExtensionmanager">
+	<span class="icon-markup">
+<img src="/typo3/sysext/extensionmanager/Resources/Public/Icons/module-extensionmanager.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Extensions
+							</span>
+						</a>
+					</li>
+				
+			</ul>
+		</li>
+	
+		<li class="modulemenu-group expanded" id="system" data-modulename="system" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+			<div class="modulemenu-group-header">
+				<span class="modulemenu-icon modulemenu-group-icon">
+						
+								<span class="t3js-icon icon icon-size-default icon-state-default icon-module-system" data-identifier="module-system">
+	<span class="icon-markup">
+<span class="icon-unify"><i class="fa fa-plug"></i></span>
+	</span>
+	
+</span>
+							
+				</span>
+				<span class="modulemenu-group-title">
+					System <span class="caret"></span>
+				</span>
+			</div>
+			<ul class="modulemenu-group-container">
+				
+					<li id="system_BeuserTxPermission" class="modulemenu-item t3js-mainmodule" data-modulename="system" data-navigationcomponentid="TYPO3/CMS/Backend/PageTree/PageTreeElement" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsystem%2FBeuserTxPermission%2F&amp;token=315e2b3cbc9eef46d041563f14f0ea1c810f4c4b" class="modulemenu-item-link" title="Page editing permissions">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-system_BeuserTxPermission" data-identifier="module-system_BeuserTxPermission">
+	<span class="icon-markup">
+<img src="/typo3/sysext/beuser/Resources/Public/Icons/module-permission.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Access
+							</span>
+						</a>
+					</li>
+				
+					<li id="system_BeuserTxBeuser" class="modulemenu-item t3js-mainmodule" data-modulename="system" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsystem%2FBeuserTxBeuser%2F&amp;token=ccf0629f6862d2864b82c508a0948b42609a57bb" class="modulemenu-item-link" title="Backend Users">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-system_BeuserTxBeuser" data-identifier="module-system_BeuserTxBeuser">
+	<span class="icon-markup">
+<img src="/typo3/sysext/beuser/Resources/Public/Icons/module-beuser.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Backend users
+							</span>
+						</a>
+					</li>
+				
+					<li id="system_BelogLog" class="modulemenu-item t3js-mainmodule" data-modulename="system" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsystem%2FBelogLog%2F&amp;token=438932d428cb5cd464b55db52554d4872c7d02a9" class="modulemenu-item-link" title="Viewing log">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-system_BelogLog" data-identifier="module-system_BelogLog">
+	<span class="icon-markup">
+<img src="/typo3/sysext/belog/Resources/Public/Icons/module-belog.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Log
+							</span>
+						</a>
+					</li>
+				
+					<li id="system_dbint" class="modulemenu-item t3js-mainmodule" data-modulename="system" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsystem%2Fdbint%2F&amp;token=3b86aa07eac497143303fbededf2bb4895e3228b" class="modulemenu-item-link" title="Database integrity check">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-system_dbint" data-identifier="module-system_dbint">
+	<span class="icon-markup">
+<img src="/typo3/sysext/lowlevel/Resources/Public/Icons/module-dbint.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								DB check
+							</span>
+						</a>
+					</li>
+				
+					<li id="system_config" class="modulemenu-item t3js-mainmodule" data-modulename="system" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsystem%2Fconfig%2F&amp;token=e5b51975c853892aa0e187d04260fe3fcd69223b" class="modulemenu-item-link" title="View configuration from localconf.php and tables.php">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-system_config" data-identifier="module-system_config">
+	<span class="icon-markup">
+<img src="/typo3/sysext/lowlevel/Resources/Public/Icons/module-config.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Configuration
+							</span>
+						</a>
+					</li>
+				
+					<li id="system_reports" class="modulemenu-item t3js-mainmodule" data-modulename="system" data-navigationcomponentid="" data-navigationframescript="" data-navigationframescriptparameters="">
+						<a href="#" data-link="/typo3/index.php?route=%2Fsystem%2Freports%2F&amp;token=8b396ae4208a175d20e27fad44b6f82a439c1015" class="modulemenu-item-link" title="System Reports">
+							<span class="modulemenu-icon modulemenu-item-icon">
+                                <span class="t3js-icon icon icon-size-default icon-state-default icon-module-system_reports" data-identifier="module-system_reports">
+	<span class="icon-markup">
+<img src="/typo3/sysext/reports/Resources/Public/Icons/module-reports.svg" width="32" height="32" />
+	</span>
+	
+</span>
+							</span>
+							<span class="modulemenu-item-title">
+								Reports
+							</span>
+						</a>
+					</li>
+				
+			</ul>
+		</li>
+	
+</ul>
+
+		</div>
+	</div>
+	<div class="scaffold-content t3js-scaffold-content">
+		<div class="scaffold-content-navigation t3js-scaffold-content-navigation">
+			<div class="scaffold-content-navigation-component" data-component="typo3-navigationIframe">
+				<iframe name="nav_frame" src="about:blank" id="typo3-navigationContainerIframe" scrolling="no" class="scaffold-content-navigation-iframe t3js-scaffold-content-navigation-iframe"></iframe>
+			</div>
+		</div>
+		<div class="scaffold-content-module t3js-scaffold-content-module">
+			<iframe name="list_frame" id="typo3-contentIframe" scrolling="no" class="scaffold-content-module-iframe t3js-scaffold-content-module-iframe" src="/typo3/index.php?route=%2Fhelp%2FAboutAbout%2F&amp;token=87c3b7a8594907c1eb2bcef21415a7c77de78731"></iframe>
+		</div>
+		<div class="scaffold-content-overlay t3js-scaffold-content-overlay"></div>
+	</div>
+</div>
+
+<div id="t3js-modal-loginrefresh" class="t3js-modal t3js-modal-loginrefresh modal modal-type-default modal-severity-notice modal-style-light modal-size-small fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">TYPO3 login expiration notice</h4></div><div class="modal-body"><p>Your TYPO3 login is about to expire. Please confirm that you want to stay logged in.</p><div class="progress"><div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span class="sr-only"></span></div></div></div><div class="modal-footer"><button class="btn btn-default" data-action="logout">Log me out</button><button class="btn btn-primary t3js-active" data-action="refreshSession">Stay logged in!</button></div></div></div></div><div id="t3js-modal-backendlocked" class="t3js-modal t3js-modal-backendlocked modal modal-type-default modal-severity-notice modal-style-light modal-size-small fade"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Please wait ...</h4></div><div class="modal-body"><p>The TYPO3 backend is currently locked for maintenance. Leave this browser window open and the backend will automatically become available again once maintenance is complete.</p></div></div></div></div><div id="t3js-modal-backendloginform" class="t3js-modal t3js-modal-backendloginform modal modal-type-default modal-severity-notice modal-style-light modal-size-small fade modal-notice"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4 class="modal-title">Refresh Login to TYPO3 (User: ressourcenmangeltypo3)</h4></div><div class="modal-body"><p>Your TYPO3 login has expired. You need to login again if you want to continue. Otherwise you can close the current browser window.</p><form id="beLoginRefresh" method="POST" action="/typo3/index.php?route=%2Fajax%2Flogin"><div class="form-group"><input type="password" name="p_field" autofocus="autofocus" class="form-control" placeholder="Password" data-rsa-encryption="t3-loginrefres-userident" /></div><input type="hidden" name="username" value="ressourcenmangeltypo3" /><input type="hidden" name="userident" id="t3-loginrefres-userident" /></form></div><div class="modal-footer"><a href="/typo3/index.php?route=%2Flogout&amp;token=6f27b39d2b8e77191f0a82f7b7a5b85bcb8e5248" class="btn btn-default">Exit</a><button type="button" class="btn btn-primary" data-action="refreshSession">Login</button></div></div></div></div></body></html>

@@ -1,0 +1,63 @@
+{
+    "name": "eh/eh-phpunit",
+    "type": "typo3-cms-extension",
+    "description": "PHPUnit Schulung",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "phpunit"
+    ],
+    "homepage": "https://www.entwicklungshilfe.nrw",
+    "support": {
+        "issues": "https://github.com/Entwicklungshilfe-NRW/eh_phpunit/issues"
+    },
+    "authors": [
+        {
+            "name": "Roland Golla",
+            "email": "rolandgolla@gmail.com",
+            "role": "Trainer",
+            "homepage": "http://www.rolandgolla.de"
+        }
+    ],
+    "license": "GPL-2.0+",
+    "require": {
+        "typo3/cms": "^8.6"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^2.0",
+        "codeception/codeception": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eh\\EhPhpunit\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eh\\EhPhpunit\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "eh_phpunit": "self.version",
+        "typo3-ter/eh-phpunit": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "mkdir -p .Build/Web/typo3conf/ext/",
+            "[ -L .Build/Web/typo3conf/ext/eh_phpunit ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/eh_phpunit"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web"
+        }
+    }
+}

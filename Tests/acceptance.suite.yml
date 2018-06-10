@@ -1,0 +1,18 @@
+actor: AcceptanceTester
+modules:
+    enabled:
+        - \Eh\EhPhpunit\Helper\Acceptance
+        - WebDriver
+        - Asserts
+        - Db
+    config:
+        WebDriver:
+          url: 'http://localhost:8000'
+          browser: chrome
+          window_size: 1600x1000
+env:
+    firefox:
+        modules:
+          config:
+            WebDriver:
+              browser: 'firefox'
