@@ -3,7 +3,7 @@ namespace Eh\EhPhpunit;
 use Codeception\Stub;
 use Eh\EhPhpunit\UnitTester;
 
-class NewsletterCest
+class newsletterCest
 {
     private $fixture;
 
