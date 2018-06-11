@@ -21,11 +21,13 @@
     ],
     "license": "GPL-2.0+",
     "require": {
-        "typo3/cms": "^8.6"
+        "typo3/cms-core": "^8.7"
     },
     "require-dev": {
         "typo3/testing-framework": "^2.0",
-        "codeception/codeception": "^2.3"
+        "codeception/codeception": "^2.3",
+        "typo3/cms-styleguide": "~8.0.8",
+        "typo3/cms": "^8.7"
     },
     "autoload": {
         "psr-4": {

@@ -1,5 +1,5 @@
 <?php
-
+namespace Eh\EhPhpunit;
 
 /**
  * Inherited Methods
