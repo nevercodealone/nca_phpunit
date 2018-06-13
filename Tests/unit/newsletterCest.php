@@ -24,4 +24,19 @@ class newsletterCest
 
         $I->assertSame('Welcome', $this->fixture->subscription('testify'));
     }
+
+    // tests
+    public function subscriptionWithInvalidEmailReturnWelcome(UnitTester $I)
+    {
+        $this->fixture = Stub::make(
+            $this->fixture,
+            [
+                'validateEmail' => false
+            ]
+        );
+
+        $I->assertFalse($this->fixture->subscription('testify'));
+    }
+
+
 }

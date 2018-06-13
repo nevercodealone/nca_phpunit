@@ -1,5 +1,15 @@
 # TYPO3 Schulung für PHPUnit Tests
 
+## PhpStorm Integration
+https://www.jetbrains.com/help/phpstorm/using-codeception-framework.html
+
+## PhpStorm Settings
+Path to executable Codeception
+/Users/.../typo3conf/ext/eh_phpunit/.Build/bin/codecept
+
+Path to configuration
+/Users/..../typo3conf/ext/eh_phpunit/codeception.yml
+
 ## Run commands
 All tests in root folder
 ```bash
@@ -25,3 +35,4 @@ If you use the last command and see the genereted coverage you will see that the
 ### Inspriation
 Thank you Helmut Hummel for your scaffold extension
 [GitHub](https://github.com/helhum/ext_scaffold)
+
